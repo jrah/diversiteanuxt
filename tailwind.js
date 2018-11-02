@@ -125,7 +125,12 @@ let colors = {
   pink: '#f66d9b',
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef'
+  'pink-lightest': '#ffebef',
+
+  'navy-dark': '#2B3A5B',
+  navy: '#25324E',
+  'navy-light': '#3c475f',
+  'navy-lighter': '#49639A'
 }
 
 module.exports = {
@@ -164,12 +169,10 @@ module.exports = {
   */
 
   screens: {
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px'
+    ns: { min: '30em' },
+    m: { min: '30em', max: '64em' },
+    l: { max: '64em'}
   },
-
   /*
   |-----------------------------------------------------------------------------
   | Fonts                                    https://tailwindcss.com/docs/fonts
@@ -899,7 +902,7 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       // center: true,
-      // padding: '1rem',
+      // padding: '1rem'
     })
   ],
 
