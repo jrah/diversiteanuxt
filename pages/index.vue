@@ -1,24 +1,61 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        diversiteanuxt
-      </h1>
-      <h2 class="subtitle">
-        My cat&#39;s pajamas Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <section class="">
+    <form class="w-full max-w-xs">
+      <div class="md:flex md:items-center mb-6">
+        <div class="md:w-1/3">
+          <label
+            class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4"
+            for="inline-full-name">
+            Full Name
+          </label>
+        </div>
+        <div class="md:w-2/3">
+          <input
+            id="inline-full-name"
+            class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-purple"
+            type="text"
+            value="Jane Doe">
+        </div>
       </div>
-    </div>
+      <div class="md:flex md:items-center mb-6">
+        <div class="md:w-1/3">
+          <label
+            class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4"
+            for="inline-username">
+            Password
+          </label>
+        </div>
+        <div class="md:w-2/3">
+          <input
+            id="inline-username"
+            class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-purple"
+            type="password"
+            placeholder="******************">
+        </div>
+      </div>
+      <div class="md:flex md:items-center mb-6">
+        <div class="md:w-1/3"/>
+        <label class="md:w-2/3 block text-grey font-bold">
+          <input
+            class="mr-2 leading-tight"
+            type="checkbox">
+          <span class="text-sm">
+            Send me your newsletter!
+          </span>
+        </label>
+      </div>
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/3"/>
+        <div class="md:w-2/3">
+          <button
+            class="shadow bg-purple hover:bg-purple-light focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+            type="button">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+
   </section>
 </template>
 
@@ -33,39 +70,4 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
