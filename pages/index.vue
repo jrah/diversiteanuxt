@@ -10,7 +10,7 @@
           style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
           class="bg-black bg-cover ns:w-1/4 h-full rounded-l-lg"/>
         <form class="bg-grey-lightest ns:w-3/4 p-5 rounded-r-lg">
-          <div class="">
+          <div class="text-darkest">
             <h1 class="leading-tight mt-0 mb-3">Lorem ipsum dolor sit amet.</h1>
             <p class="leading-normal mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?</p>
           </div>
