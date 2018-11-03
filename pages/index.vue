@@ -1,10 +1,10 @@
 <template>
   <section class="flex h-screen bg-navy">
-    <div class="flex justify-center items-center w-full m-20 rounded-lg shadow-md">
+    <div class="flex justify-center items-center w-full m-20 ns:rounded-lg ns:shadow-md">
       <div
         style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
-        class="bg-black bg-cover h-full rounded-l-lg w-1/4"/>
-      <form class="h-full bg-grey-lightest w-3/4">
+        class="bg-black bg-cover ns:h-full rounded-l-lg ns:w-1/4 ns:block hidden"/>
+      <form class="ns:h-full bg-grey-lightest ns:w-3/4 w-full p-4 rounded ns:p-0 ns:rounded-none">
         <div class="flex h-full justify-center flex-col max-w-sm">
           <div class="ns:flex ns:items-center mb-6">
             <div class="ns:w-1/3">
