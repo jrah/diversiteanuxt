@@ -1,68 +1,24 @@
 <template>
-  <section class="flex h-screen bg-navy">
-    <div class="flex justify-center items-center w-full m-20 ns:rounded-lg ns:shadow-md">
-      <div
-        style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
-        class="bg-black bg-cover ns:h-full rounded-l-lg ns:w-1/4 ns:block hidden"/>
-      <form class="ns:h-full bg-grey-lightest ns:w-3/4 w-full p-4 rounded ns:p-0 ns:rounded-r">
-        <div class="flex h-full justify-center flex-col max-w-sm">
-          <div class="ns:flex ns:items-center mb-6">
-            <div class="ns:w-1/3">
-              <label
-                class="block text-grey font-bold ns:text-right mb-1 ns:mb-0 pr-4"
-                for="inline-full-name">
-                Full Name
-              </label>
-            </div>
-            <div class="ns:w-2/3">
-              <input
-                id="inline-full-name"
-                class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-navy"
-                type="text"
-                value="Jane Doe">
-            </div>
-          </div>
-          <div class="ns:flex ns:items-center mb-6">
-            <div class="ns:w-1/3">
-              <label
-                class="block text-grey font-bold ns:text-right mb-1 ns:mb-0 pr-4"
-                for="inline-username">
-                Password
-              </label>
-            </div>
-            <div class="ns:w-2/3">
-              <input
-                id="inline-username"
-                class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:bg-white focus:border-navy"
-                type="password"
-                placeholder="******************">
-            </div>
-          </div>
-          <div class="ns:flex ns:items-center mb-6">
-            <div class="ns:w-1/3"/>
-            <label class="ns:w-2/3 block text-grey font-bold">
-              <input
-                class="mr-2 leading-tight"
-                type="checkbox">
-              <span class="text-sm">
-                Send me your newsletter!
-              </span>
-            </label>
-          </div>
-          <div class="ns:flex ns:items-center">
-            <div class="ns:w-1/3"/>
-            <div class="ns:w-2/3">
-              <button
-                class="shadow bg-navy hover:bg-navy-light focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                type="button">
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
+  <section class="h-screen bg-navy flex items-center">
 
-      </form>
+    <div 
+      class="max-w-lg mx-auto" 
+      style="max-height: 28rem; height: 95%; width:95%;">
+      <!-- <h1 class="text-grey-darker text-base">Introduction..</h1> -->
+      <div class="ns:rounded-lg ns:shadow-md flex h-full">
+        <div
+          style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
+          class="bg-black bg-cover ns:w-1/4 h-full"/>
+        <form class="bg-grey-lightest ns:w-3/4 p-4">
+          <div class="p-5">
+            <h1 class="leading-tight">Lorem ipsum dolor sit amet.</h1>
+            <p class="leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?</p>
 
+          </div>
+
+        </form>
+
+      </div>
     </div>
 
   </section>
