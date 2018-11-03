@@ -1,0 +1,57 @@
+$mqs: (
+  sm: 30em,
+  lg: 64em
+) !default;
+
+@mixin mq($mq) {
+  @if $mq == ns {
+
+    @media screen and (min-width: #{map-get($mqs, sm)}) {
+      @content;
+    }
+
+  } @if $mq == m {
+
+      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    } @if $mq == l {
+
+      @media screen and (min-width: #{map-get($mqs, lg)}) {
+        @content;
+      }
+
+    }
+}
+
+%mwc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+@each $size, $width in $mqs {
+  %mwc {
+    @if $size == sm {
+      @media screen and (min-width: #{map-get($mqs, sm)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 55em;
+      }
+    }
+    @if $size == lg {
+      @media screen and (min-width: #{map-get($mqs, lg)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 72em;
+      }
+    } @else {
+      @media screen and (min-width: #{map-get($mqs, sm)}) and (max-width: #{map-get($mqs, lg)}) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65em;
+      }
+    }
+  }
+}
