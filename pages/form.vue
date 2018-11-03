@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import Radio from '~/components/input/radio.vue'
+import Radio from '~/components/Radio.vue'
 
 export default {
   components: {
