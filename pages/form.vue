@@ -13,16 +13,7 @@
           <div class="text-grey-darkest">
             <h1 class="leading-tight mt-0 mb-3">Lorem ipsum dolor sit amet.</h1>
             <p class="leading-normal mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?</p>
-            <div class="md:flex md:items-center mb-6"><div class="md:w-1/3"/>
-              <label class="md:w-2/3 block text-grey-darkest">
-                <input
-                  type="radio"
-                  class="mr-2 leading-tight">
-                <span class="text-sm">
-                  Send me your newsletter!
-                </span>
-              </label>
-            </div>
+            <radio :label="Hello"/>
             <div class="md:flex md:items-center mb-6"><div class="md:w-1/3"/>
               <label class="md:w-2/3 block text-grey-darkest">
                 <input
@@ -59,11 +50,17 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Radio from '~/components/input/radio.vue'
 
 export default {
   components: {
-    Logo
+    Radio
+  },
+  props: {
+    picked: {
+      type: String,
+      required: true
+    }
   },
   data() {
     return {
