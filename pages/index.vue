@@ -4,7 +4,7 @@
       <div
         style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
         class="bg-black bg-cover ns:h-full rounded-l-lg ns:w-1/4 ns:block hidden"/>
-      <form class="ns:h-full bg-grey-lightest ns:w-3/4 w-full p-4 rounded ns:p-0 ns:rounded-none">
+      <form class="ns:h-full bg-grey-lightest ns:w-3/4 w-full p-4 rounded ns:p-0 ns:rounded-r">
         <div class="flex h-full justify-center flex-col max-w-sm">
           <div class="ns:flex ns:items-center mb-6">
             <div class="ns:w-1/3">
