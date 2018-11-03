@@ -5,7 +5,7 @@
       style="max-height: 28rem; height: 95%; width:95%;">
       <!-- <h1 class="text-grey-darker text-base">Introduction..</h1> -->
       <h1 class="text-grey-dark font-light leading-tight text-xl mb-3">Plan your future</h1>
-      <div class="ns:rounded-lg ns:shadow-md flex h-full">
+      <div class="ns:rounded-lg ns:shadow-md flex ns:h-full">
         <div
           style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
           class="bg-black bg-cover ns:w-1/4 h-full rounded-l-lg"/>
