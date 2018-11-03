@@ -49,6 +49,7 @@
             </div>
           </div>
 
+
         </form>
 
       </div>
@@ -63,6 +64,52 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+      questions: [
+        {
+          text: 'How adventurous are you?',
+          responses: [
+            {
+              text: 'Not adventurous',
+              value: 'Type 1',
+              type: 'checkbox'
+            },
+            {
+              text: 'adventurous',
+              value: 'Type 2',
+              type: 'checkbox'
+            },
+            {
+              text: 'Somewhat Adventurous',
+              value: 'Type 3',
+              type: 'checkbox'
+            }
+          ]
+        },
+        {
+          text: 'What best describes your tea experience?',
+          responses: [
+            {
+              text: 'I am new to the tea world',
+              value: 'Type 1',
+              type: 'checkbox'
+            },
+            {
+              text: 'I am a tea enthusiast',
+              value: 'Type 2',
+              type: 'checkbox'
+            },
+            {
+              text: 'For popularity',
+              value: 'Type 3',
+              type: 'checkbox'
+            }
+          ]
+        }
+      ]
+    }
   }
 }
 </script>
