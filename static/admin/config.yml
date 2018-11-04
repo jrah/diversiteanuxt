@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+
+collections: # A list of collections the CMS should be able to edit
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Splash
+            name: splash
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text Splash, name: text, widget: text}
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Pointers
+                name: points
+                widget: list
+                fields:
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Paragraph, name: paragraph, widget: markdown}
+      - label: "General Settings"
+        name: "site"
+        file: "content/site.json"
+        fields:
+          - {label: Global title, name: title_global, widget: string}
+          - label: Social icons
+            description: Refer to font awesome website for type (icon names), for example "facebook" would show the facebook icon, while "facebook-square" would show its squared counterpart
+            name: social
+            widget: list
+            fields:
+              - {label: Type, name: type, widget: string}
+              - {label: Link, name: href, widget: string}
+          - label: Navigation
+            name: nav
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Link, name: href, widget: string}
