@@ -1,11 +1,15 @@
 <template>
   <div>
-    <label class="md:w-2/3 block text-grey-darkest">
+    <label
+      tabindex="0"
+      class="ns:w-2/3 block text-grey-darkest">
       <input
+        :value="value"
+        name="checked"
         type="radio"
         class="mr-2 leading-tight">
       <span class="text-sm">
-        {{ label }}
+        {{ value }}
       </span>
     </label>
   </div>
@@ -15,6 +19,10 @@
 export default {
   props: {
     label: {
+      type: String,
+      required: true
+    },
+    value: {
       type: String,
       required: true
     }

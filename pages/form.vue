@@ -13,26 +13,13 @@
           <div class="text-grey-darkest">
             <h1 class="leading-tight mt-0 mb-3">Lorem ipsum dolor sit amet.</h1>
             <p class="leading-normal mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?</p>
-            <radio :label="Hello"/>
-            <div class="md:flex md:items-center mb-6"><div class="md:w-1/3"/>
-              <label class="md:w-2/3 block text-grey-darkest">
-                <input
-                  type="radio"
-                  class="mr-2 leading-tight">
-                <span class="text-sm">
-                  Send me your newsletter!
-                </span>
-              </label>
+            <div class="mb-2">
+              <div class="ns:w-1/3"/>
+              <radio value="First"/>
             </div>
-            <div class="md:flex md:items-center mb-6"><div class="md:w-1/3"/>
-              <label class="md:w-2/3 block text-grey-darkest">
-                <input
-                  type="radio"
-                  class="mr-2 leading-tight">
-                <span class="text-sm">
-                  Send me your newsletter!
-                </span>
-              </label>
+            <div class="mb-2">
+              <div class="ns:w-1/3"/>
+              <radio value="Second"/>
             </div>
             <div class="absolute pin-b pin-r p-3">
               <button class="text-navy hover:text-navy-light font-bold py-2 px-4">Back</button>
