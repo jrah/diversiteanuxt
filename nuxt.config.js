@@ -15,7 +15,6 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      // { src: 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js' },
       { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ]
   },
@@ -41,10 +40,16 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    'nuxt-netlify-cms'
+    'nuxt-netlify-cms',
+    '@nuxtjs/markdownit'
   ],
   netlifyCms: {
     adminPath: 'secure'
+  },
+  markdownit: {
+    linkify: true,
+    injected: true,
+    use: ['markdown-it-attrs']
   },
   /*
   ** Axios module configuration
