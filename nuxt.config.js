@@ -37,8 +37,11 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    ['nuxt-netlify-cms', { adminPath: 'secure' }]
+    'nuxt-netlify-cms'
   ],
+  netlifyCms: {
+    adminPath: 'secure'
+  },
   /*
   ** Axios module configuration
   */
