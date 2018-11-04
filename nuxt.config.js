@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   mode: 'universal',
@@ -65,6 +66,20 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    extend(config, { isServer }) {
+      if (isServer) {
+        config.externals = [
+          nodeExternals({
+            // default value for `whitelist` is
+            // [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i]
+            whitelist: [
+              /es6-promise|\.(?!(?:js|json)$).{1,5}$/i,
+              /^vue-awesome/
+            ]
+          })
+        ]
+      }
+    },
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

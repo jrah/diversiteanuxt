@@ -20,7 +20,9 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "node-sass": "^4.9.4",
     "nuxt": "^2.0.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "vue-awesome": "^3.2.0",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
