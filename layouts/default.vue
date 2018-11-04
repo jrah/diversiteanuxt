@@ -4,6 +4,18 @@
   </div>
 </template>
 
+<script>
+import appNavbar from '~/components/Navbar.vue'
+import appFooter from '~/components/Footer.vue'
+
+export default {
+  components: {
+    appFooter,
+    appNavbar
+  }
+}
+</script>
+
 <style lang="scss">
 @import '~assets/scss/mixins';
 html {
