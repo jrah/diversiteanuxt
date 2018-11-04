@@ -1,1 +1,18 @@
-{}
+{
+  "title": "Welcome",
+  "intro": "Intro text in markdown",
+  "splash": {
+    "title": "Splash title",
+    "text": "Splash text"
+  },
+  "contact": {
+    "title": "Contact title",
+    "text": "Contact text",
+    "points": [
+      {
+        "icon": "facebook",
+        "paragraph": "Facebook text paragraph"
+      }
+    ]
+  }
+}
