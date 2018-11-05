@@ -1,6 +1,8 @@
 <template>
   <div>
+    <app-navbar/>
     <nuxt/>
+    <app-footer/>
   </div>
 </template>
 
@@ -23,9 +25,9 @@ html {
 }
 
 .container {
-  @apply px-4;
+  @apply px-8;
   @include mq(ns) {
-    @apply px-5;
+    @apply px-16;
   }
   @extend %mwc;
 }
