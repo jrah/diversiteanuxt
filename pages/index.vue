@@ -6,7 +6,7 @@
         class="bg-cover bg-center py-6 relative flex items-center bg-navy"
         style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
         <div class="container py-32 relative z-10">
-          <div class="text-white l:w-2/5">
+          <div class="text-white m:w-3/5 l:w-2/5">
             <h1
               v-if="home.title"
               class="mt-0 f1 mb-2 font-bold text-5xl leading-tight">{{ home.title }}</h1>
