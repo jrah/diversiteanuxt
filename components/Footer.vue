@@ -9,10 +9,10 @@
           v-for="(icon, index) in icons"
           :key="index"
           :name=" '' + index "
-          class="inline my-2">
+          class="inline mr-3">
           <a
             :href="icon.href"
-            class="near-black">
+            class="text-grey-darkest hover:text-red">
             <no-ssr>
               <v-icon
                 :name="'brands/' + icon.type"
