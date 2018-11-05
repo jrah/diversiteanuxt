@@ -39,7 +39,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-awesome', ssr: true }],
 
   /*
   ** Nuxt.js modules
