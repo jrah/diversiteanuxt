@@ -48,7 +48,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     'nuxt-netlify-cms',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-purgecss'
   ],
   netlifyCms: {
     adminPath: 'secure'
