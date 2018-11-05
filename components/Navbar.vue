@@ -1,6 +1,46 @@
 <template>
 
-  <div>Navbar</div>
+  <div class="absolute pin z-30 w-full">
+    <div class="container py-4 flex items-center justify-between">
+      <img
+        src="~assets/images/logo.svg"
+        class="w-32 text-white"
+        alt="Logo">
+
+      <div
+        class="text-white ns:hidden db navMenu-toggle"
+        @click="openNav()">
+        <no-ssr>
+          <v-icon
+            name="bars"
+            scale="2"
+            class="block"/>
+        </no-ssr>
+      </div>
+
+      <nav
+        :class="{ isOpen: isOpen }"
+        class="navMenu--top">
+        <!-- <span @click="closeNav(click)" class="pointer z-4">Close</span> -->
+        <a
+          v-for="(item, index) in site.nav"
+          :v-if="item !== null"
+          :key="`nav-${index}`"
+          :href="item.href"
+          :class="'navMenu--top-item ns:inline block no-underline font-bold mr2-ns align-middle'">
+          <div class="ns:hidden inline align-middle">
+            <no-ssr>
+              <v-icon
+                name="home"
+                scale="1.5"/>
+            </no-ssr>
+          </div>
+          <span class="inline">{{ item.text }}</span>
+        </a>
+      </nav>
+
+    </div>
+  </div>
 
 </template>
 
@@ -86,7 +126,6 @@ export default {
     @include mq(ns) {
       display: none;
     }
-    z-index: 1;
 
     &:hover {
       cursor: pointer;

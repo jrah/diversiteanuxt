@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="site-canvas">
     <app-navbar/>
     <nuxt/>
     <app-footer/>
@@ -30,5 +30,11 @@ html {
     @apply px-16;
   }
   @extend %mwc;
+}
+.site-canvas {
+  @apply bg-white;
+  transition: 0.3s ease transform;
+  position: relative;
+  overflow: hidden;
 }
 </style>
