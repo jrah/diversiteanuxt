@@ -5,7 +5,7 @@
       <div
         class="bg-cover bg-center py-6 relative flex items-center bg-navy"
         style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
-        <div class="container py-32 relative z-20">
+        <div class="container py-32 relative z-10">
           <div class="text-white l:w-2/5">
             <h1
               v-if="home.title"
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div
-          class="overlay absolute block pin z-10"
+          class="overlay"
           style="background-image: linear-gradient(205deg,rgba(37, 37, 37, 0.23), rgba(10, 10, 10, 0.72));"/>
       </div>
 
@@ -37,5 +37,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+.overlay {
+  position: absolute;
+  @apply pin;
+  z-index: 1;
+  display: block;
+}
 </style>

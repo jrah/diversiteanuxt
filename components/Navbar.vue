@@ -1,7 +1,7 @@
 <template>
 
-  <div class="absolute pin z-30 w-full">
-    <div class="container py-4 flex items-center justify-between">
+  <div class="absolute pin w-full">
+    <div class="container relative z-20 py-4 flex items-center justify-between">
       <img
         src="~assets/images/logo.svg"
         class="w-32 text-white"
