@@ -4,7 +4,7 @@
 
       <div
         class="bg-cover bg-center py-6 relative flex items-center bg-navy"
-        style="background-image:url('https://source.unsplash.com/XmTZmASn3Dc')">
+        :style="{'background-image' : 'url('+home.image+')'}">
         <div class="container py-32 relative z-10">
           <div class="text-white m:w-3/5 l:w-2/5">
             <h1
