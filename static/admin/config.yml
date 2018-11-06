@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro text, name: intro, widget: markdown}
           - label: Feature Blocks
             name: features
+            required: false
             description: Feature blocks are the "three points" renamed
             widget: object
             fields:
@@ -31,6 +32,7 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Paragraph, name: paragraph, widget: text}
           - label: Option Blocks
             name: options
+            required: false
             widget: object
             fields:
             - label: Tea Dictionary
@@ -55,12 +57,14 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Text Splash, name: text, widget: text}
           - label: Testimonials
             name: testimonial
+            required: false
             widget: list
             fields:
               - {label: Quote, name: quote, widget: textarea}
               - {label: Author, name: author, widget: text}
           - label: Collaborations
             name: Collaborations
+            required: false
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
