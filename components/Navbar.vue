@@ -79,7 +79,7 @@ export default {
   @apply bg-white;
   .site-canvas {
     transform: translateX(-60%);
-    position: inherit;
+    position: fixed;
     overflow: initial;
   }
 }
