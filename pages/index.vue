@@ -78,6 +78,23 @@
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
     </section>
+    <section class="container py-10 bg-grey-lightest">
+      <h1 class="text-center mb-12 text-4xl">Recent collaboration</h1>
+      <ul class="flex list-reset justify-around">
+        <li><img
+          src="~/assets/images/placeholder/acme-1.svg"
+          alt="Logo"></li>
+        <li><img
+          src="~/assets/images/placeholder/acme-2.svg"
+          alt=""></li>
+        <li><img
+          src="~/assets/images/placeholder/acme-3.svg"
+          alt=""></li>
+        <li><img
+          src="~/assets/images/placeholder/acme-4.svg"
+          alt=""></li>
+      </ul>
+    </section>
     <section class="p-24">
       <carousel
         :auto-play="true"
