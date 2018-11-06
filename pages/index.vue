@@ -78,22 +78,80 @@
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
     </section>
-    <section>
-      <carousel autoplay="true">
+    <section class="p-24">
+      <carousel
+        :per-page="1">
         <slide>
-          <img
-            src="https://source.unsplash.com/random"
-            alt="">
+          <div class="p-3">
+            <figure class="text-center">
+              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+                <no-ssr>
+                  <v-icon
+                    name="quote-left"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
+                <no-ssr>
+                  <v-icon
+                    name="quote-right"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+              </blockquote>
+              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
+            </figure>
+          </div>
         </slide>
         <slide>
-          <img
-            src="https://source.unsplash.com/random"
-            alt="">
+          <div class="p-3">
+            <figure class="text-center">
+              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+                <no-ssr>
+                  <v-icon
+                    name="quote-left"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
+                <no-ssr>
+                  <v-icon
+                    name="quote-right"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+              </blockquote>
+              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
+            </figure>
+          </div>
         </slide>
         <slide>
-          <img
-            src="https://source.unsplash.com/random"
-            alt="">
+          <div class="p-3">
+            <figure class="text-center">
+              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+                <no-ssr>
+                  <v-icon
+                    name="quote-left"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
+                <no-ssr>
+                  <v-icon
+                    name="quote-right"
+                    scale="2"
+                    class="ma-3 text-grey-dark"
+                  />
+                </no-ssr>
+              </blockquote>
+              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
+            </figure>
+          </div>
         </slide>
       </carousel>
     </section>
