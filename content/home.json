@@ -2,6 +2,35 @@
   "title": "Tea Dictionary",
   "intro": "From FTGFOP1 graded black tea to chocolate cake tea, DiversiTea has created a tea dictionary that will allow you to explore teas from all around the world.",
   "image": "/images/uploads/frank-mckenna-150516-unsplash.jpg",
+  "features": {
+    "title": "Heading",
+    "block": [
+      {
+        "icon": "brands/angellist",
+        "heading": "Feature title",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+      },
+      {
+        "icon": "brands/vuejs",
+        "heading": "Feature title",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+      },
+      {
+        "icon": "air-freshener",
+        "heading": "Feature title",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+      }
+    ]
+  },
+  "options": {
+    "dictionary": {
+      "icon": "book",
+      "paragraph": ""
+    },
+    "quiz": {
+      "icon": "book"
+    }
+  },
   "splash": {
     "title": "Splash title",
     "text": "Splash text"
