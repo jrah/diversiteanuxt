@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - {label: Icon, name: icon, widget: string}
-                  - {label: Heading, name: paragraph, widget: text}
+                  - {label: Heading, name: heading, widget: string}
                   - {label: Paragraph, name: paragraph, widget: text}
           - label: Option Blocks
             name: options
