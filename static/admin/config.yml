@@ -41,14 +41,14 @@ collections: # A list of collections the CMS should be able to edit
               widget: object
               fields:
                 - {label: Icon, name: icon, widget: string}
-                - {label: Heading, name: paragraph, widget: text}
+                - {label: Heading, name: heading, widget: text}
                 - {label: Paragraph, name: paragraph, widget: text}
             - label: Tea Quiz
               name: quiz
               widget: object
               fields:
                 - {label: Icon, name: icon, widget: string}
-                - {label: Heading, name: paragraph, widget: text}
+                - {label: Heading, name: heading, widget: text}
                 - {label: Paragraph, name: paragraph, widget: text}
           - label: Splash
             name: splash
