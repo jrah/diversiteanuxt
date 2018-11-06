@@ -33,7 +33,9 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - {label: Icon, name: icon, widget: string}
-                  - {label: Paragraph, name: paragraph, widget: markdown}
+                  - {label: title, name: title, widget: string}
+                  - {label: Paragraph, name: paragraph, widget: text}
+
       - label: "General Settings"
         name: "site"
         file: "content/site.json"
@@ -52,3 +54,4 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Text, name: text, widget: string}
               - {label: Link, name: href, widget: string}
+              - {label: Icon, name: icon, widget: string}
