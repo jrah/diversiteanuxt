@@ -45,7 +45,7 @@
     <splash/>
 
     <section class="container text-black ns:flex justify-between">
-      <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 pr-12 ns:mr-12">
+      <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 ns:py-10 ns:pr-12 ns:mr-12">
         <no-ssr>
           <v-icon
             name="book"
@@ -60,7 +60,7 @@
             name="arrow-right"
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
-      <div class="pt-10">
+      <div class="py-10">
         <no-ssr>
           <v-icon
             name="book"
