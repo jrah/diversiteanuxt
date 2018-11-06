@@ -96,6 +96,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Social icons
             description: Refer to font awesome website for type (icon names), for example "facebook" would show the facebook icon, while "facebook-square" would show its squared counterpart
             name: social
+            required: false
             widget: list
             fields:
               - {label: Type, name: type, widget: string}
@@ -103,6 +104,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Navigation
             name: nav
             widget: list
+            required: false
             fields:
               - {label: Text, name: text, widget: string}
               - {label: Link, name: href, widget: string}
