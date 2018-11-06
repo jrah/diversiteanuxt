@@ -1,14 +1,46 @@
 <template>
   <div class="content">
     <app-header/>
-    <section class="container py-32 bg-grey-lightest text-navy">
-      <div class="max-w-xs m-auto text-center">
-        <h1 class="leading-tight mt-0 mb-3 f2 fw8">{{ home.splash.title }}</h1>
-        <p class="leading-normal ma-0 f4">{{ home.splash.text }}</p>
+    <section class="bg-grey-lightest">
+      <div class="container py-10 text-navy m:flex l:flex justify-around">
+        <div class="text-center ns:w-1/4">
+          <no-ssr>
+            <v-icon
+              name="brands/angellist"
+              scale="3"
+              class="ma-3 text-navy"
+            />
+          </no-ssr>
+          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
+          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+        </div>
+        <div class="text-center ns:w-1/4">
+          <no-ssr>
+            <v-icon
+              name="air-freshener"
+              scale="3"
+              class="ma-3 text-navy"
+            />
+          </no-ssr>
+          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
+          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+        </div>
+        <div class="text-center ns:w-1/4">
+          <no-ssr>
+            <v-icon
+              name="brands/vuejs"
+              scale="3"
+              class="ma-3 text-navy"
+            />
+          </no-ssr>
+          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
+          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+        </div>
       </div>
     </section>
-    <section class="container text-black flex justify-between">
-      <div class="border-grey-lightest border-solid border-r-4 py-10 pr-6 mr-12">
+
+    <section class="container text-black ns:flex justify-between">
+      <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 pr-12 ns:mr-12">
         <no-ssr>
           <v-icon
             name="book"
@@ -16,14 +48,14 @@
             class="ma-3 text-navy" />
         </no-ssr>
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">Tea Dictionary</h1>
-        <p class="leading-normal ma-0 f4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos.</p>
+        <p class="leading-normal ma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos.</p>
         <a
           href="#"
           class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Open our tea dictionary<no-ssr><v-icon
             name="arrow-right"
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
-      <div class="py-10">
+      <div class="pt-10">
         <no-ssr>
           <v-icon
             name="book"
