@@ -12,7 +12,7 @@
           class="inline mr-3">
           <a
             :href="icon.href"
-            class="text-grey-darkest hover:text-red">
+            class="text-grey-darkest hover:text-navy-lighter">
             <no-ssr>
               <v-icon
                 :name="'brands/' + icon.type"
