@@ -25,15 +25,43 @@
   "options": {
     "dictionary": {
       "icon": "book",
-      "paragraph": ""
+      "heading": "Tea Dictionary",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
     },
     "quiz": {
-      "icon": "book"
+      "icon": "book",
+      "heading": "Tea Quiz",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
     }
   },
   "splash": {
     "title": "Splash title",
-    "text": "Splash text"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
+  },
+  "Collaborations": {
+    "title": "Recent collaboration",
+    "organisation": [
+      {
+        "name": "ACME 1",
+        "image": "/images/uploads/acme-1.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 2",
+        "image": "/images/uploads/acme-2.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 3",
+        "image": "/images/uploads/acme-3.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 4",
+        "image": "/images/uploads/acme-4.svg",
+        "href": "#"
+      }
+    ]
   },
   "contact": {
     "title": "Contact title",
