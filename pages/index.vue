@@ -78,6 +78,25 @@
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
     </section>
+    <section>
+      <carousel autoplay="true">
+        <slide>
+          <img
+            src="https://source.unsplash.com/random"
+            alt="">
+        </slide>
+        <slide>
+          <img
+            src="https://source.unsplash.com/random"
+            alt="">
+        </slide>
+        <slide>
+          <img
+            src="https://source.unsplash.com/random"
+            alt="">
+        </slide>
+      </carousel>
+    </section>
   </div>
 </template>
 
