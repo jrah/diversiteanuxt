@@ -1,6 +1,45 @@
 {
-  "title": "Tea Dictionary",
+  "contact": {
+    "title": "Contact title",
+    "text": "Contact text",
+    "points": [
+      {
+        "icon": "facebook",
+        "paragraph": "Facebook text paragraph"
+      }
+    ]
+  },
+  "splash": {
+    "title": "Splash title",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
+  },
   "intro": "From FTGFOP1 graded black tea to chocolate cake tea, DiversiTea has created a tea dictionary that will allow you to explore teas from all around the world.",
+  "Collaborations": {
+    "title": "Recent collaboration",
+    "organisation": [
+      {
+        "name": "ACME 1",
+        "image": "/images/uploads/acme-1.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 2",
+        "image": "/images/uploads/acme-2.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 3",
+        "image": "/images/uploads/acme-3.svg",
+        "href": "#"
+      },
+      {
+        "name": "ACME 4",
+        "image": "/images/uploads/acme-4.svg",
+        "href": "#"
+      }
+    ]
+  },
+  "title": "Tea Dictionary",
   "image": "/images/uploads/frank-mckenna-150516-unsplash.jpg",
   "features": {
     "title": "Heading",
@@ -34,43 +73,22 @@
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
     }
   },
-  "splash": {
-    "title": "Splash title",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
-  },
-  "Collaborations": {
-    "title": "Recent collaboration",
-    "organisation": [
-      {
-        "name": "ACME 1",
-        "image": "/images/uploads/acme-1.svg",
-        "href": "#"
-      },
-      {
-        "name": "ACME 2",
-        "image": "/images/uploads/acme-2.svg",
-        "href": "#"
-      },
-      {
-        "name": "ACME 3",
-        "image": "/images/uploads/acme-3.svg",
-        "href": "#"
-      },
-      {
-        "name": "ACME 4",
-        "image": "/images/uploads/acme-4.svg",
-        "href": "#"
-      }
-    ]
-  },
-  "contact": {
-    "title": "Contact title",
-    "text": "Contact text",
-    "points": [
-      {
-        "icon": "facebook",
-        "paragraph": "Facebook text paragraph"
-      }
-    ]
-  }
+  "testimonial": [
+    {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
+      "author": "James Home, CTO"
+    },
+    {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
+      "author": "Ted Kim, CEO"
+    },
+    {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
+      "author": "Kayla Kim, Senior Ruby Developer"
+    },
+    {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
+      "author": "Stephanie, Senior Operations Manager"
+    }
+  ]
 }
