@@ -179,7 +179,7 @@
 
 <script>
 import home from '~/content/home.json'
-import appHeader from '~/components/header.vue'
+import appHeader from '~/components/Header.vue'
 import splash from '~/components/Splash.vue'
 
 export default {
