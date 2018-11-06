@@ -80,6 +80,8 @@
     </section>
     <section class="p-24">
       <carousel
+        :auto-play="true"
+        :navigation-click-target-size="20"
         :per-page="1">
         <slide>
           <div class="p-3">
@@ -89,7 +91,7 @@
                   <v-icon
                     name="quote-left"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
@@ -97,7 +99,7 @@
                   <v-icon
                     name="quote-right"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
               </blockquote>
@@ -113,7 +115,7 @@
                   <v-icon
                     name="quote-left"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
@@ -121,7 +123,7 @@
                   <v-icon
                     name="quote-right"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
               </blockquote>
@@ -137,7 +139,7 @@
                   <v-icon
                     name="quote-left"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
@@ -145,7 +147,7 @@
                   <v-icon
                     name="quote-right"
                     scale="2"
-                    class="ma-3 text-grey-dark"
+                    class="m-3 text-grey-dark"
                   />
                 </no-ssr>
               </blockquote>
