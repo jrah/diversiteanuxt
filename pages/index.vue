@@ -39,6 +39,8 @@
       </div>
     </section>
 
+    <splash/>
+
     <section class="container text-black ns:flex justify-between">
       <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 pr-12 ns:mr-12">
         <no-ssr>
@@ -79,10 +81,12 @@
 <script>
 import home from '~/content/home.json'
 import appHeader from '~/components/header.vue'
+import splash from '~/components/Splash.vue'
 
 export default {
   components: {
-    appHeader
+    appHeader,
+    splash
   },
   data() {
     return {
