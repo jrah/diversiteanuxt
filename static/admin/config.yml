@@ -25,6 +25,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Title, name: title, widget: string}
               - label: Feature block
+                description: Please only use three blocks. If needs more please make an issue on the repo.
                 name: block
                 widget: list
                 fields:
