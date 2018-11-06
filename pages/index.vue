@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <app-header/>
-    <section class="bg-grey-lightest">
+    <section>
       <div class="container py-10 text-navy">
         <h1 class="text-center mb-12 text-4xl">Heading</h1>
         <div class="m:flex l:flex justify-around">
