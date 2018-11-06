@@ -2,39 +2,42 @@
   <div class="content">
     <app-header/>
     <section class="bg-grey-lightest">
-      <div class="container py-10 text-navy m:flex l:flex justify-around">
-        <div class="text-center ns:w-1/4">
-          <no-ssr>
-            <v-icon
-              name="brands/angellist"
-              scale="3"
-              class="ma-3 text-navy"
-            />
-          </no-ssr>
-          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
-          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
-        </div>
-        <div class="text-center ns:w-1/4">
-          <no-ssr>
-            <v-icon
-              name="air-freshener"
-              scale="3"
-              class="ma-3 text-navy"
-            />
-          </no-ssr>
-          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
-          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
-        </div>
-        <div class="text-center ns:w-1/4">
-          <no-ssr>
-            <v-icon
-              name="brands/vuejs"
-              scale="3"
-              class="ma-3 text-navy"
-            />
-          </no-ssr>
-          <h1 class="leading-tight mt-1 mb-1">{{ home.splash.title }}</h1>
-          <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+      <div class="container py-10 text-navy">
+        <h1 class="text-center mb-12 text-4xl">Heading</h1>
+        <div class="m:flex l:flex justify-around">
+          <div class="text-center ns:w-1/4">
+            <no-ssr>
+              <v-icon
+                name="brands/angellist"
+                scale="3"
+                class="ma-3 text-navy"
+              />
+            </no-ssr>
+            <h2 class="leading-tight text-lg mt-1 mb-1">{{ home.splash.title }}</h2>
+            <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+          </div>
+          <div class="text-center ns:w-1/4">
+            <no-ssr>
+              <v-icon
+                name="air-freshener"
+                scale="3"
+                class="ma-3 text-navy"
+              />
+            </no-ssr>
+            <h2 class="leading-tight  text-lg mt-1 mb-1">{{ home.splash.title }}</h2>
+            <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+          </div>
+          <div class="text-center ns:w-1/4">
+            <no-ssr>
+              <v-icon
+                name="brands/vuejs"
+                scale="3"
+                class="ma-3 text-navy"
+              />
+            </no-ssr>
+            <h2 class="leading-tight text-lg mt-1 mb-1">{{ home.splash.title }}</h2>
+            <p class="leading-normal mt-0 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!</p>
+          </div>
         </div>
       </div>
     </section>
