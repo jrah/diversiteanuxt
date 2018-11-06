@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro text, name: intro, widget: markdown}
           - label: Feature Blocks
             name: features
+            description: Feature blocks are the "three points" renamed
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
@@ -30,12 +31,22 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Paragraph, name: paragraph, widget: text}
           - label: Option Blocks
             name: options
-            description: Enter details specifically in relation to the option for selection (tea dictionary or tea quiz). Do not enter more than two.
-            widget: list
+            widget: object
             fields:
-              - {label: Icon, name: icon, widget: string}
-              - {label: Heading, name: paragraph, widget: text}
-              - {label: Paragraph, name: paragraph, widget: text}
+            - label: Tea Dictionary
+              name: dictionary
+              widget: object
+              fields:
+                - {label: Icon, name: icon, widget: string}
+                - {label: Heading, name: paragraph, widget: text}
+                - {label: Paragraph, name: paragraph, widget: text}
+            - label: Tea Quiz
+              name: quiz
+              widget: object
+              fields:
+                - {label: Icon, name: icon, widget: string}
+                - {label: Heading, name: paragraph, widget: text}
+                - {label: Paragraph, name: paragraph, widget: text}
           - label: Splash
             name: splash
             widget: object
