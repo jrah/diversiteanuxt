@@ -16,12 +16,50 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Intro title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: markdown}
+          - label: Feature Blocks
+            name: features
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - label: Feature block
+                name: block
+                widget: list
+                fields:
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Heading, name: paragraph, widget: text}
+                  - {label: Paragraph, name: paragraph, widget: text}
+          - label: Option Blocks
+            name: options
+            description: Enter details specifically in relation to the option for selection (tea dictionary or tea quiz). Do not enter more than two.
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: string}
+              - {label: Heading, name: paragraph, widget: text}
+              - {label: Paragraph, name: paragraph, widget: text}
           - label: Splash
             name: splash
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Text Splash, name: text, widget: text}
+          - label: Testimonials
+            name: testimonial
+            widget: list
+            fields:
+              - {label: Quote, name: quote, widget: textarea}
+              - {label: Author, name: author, widget: text}
+          - label: Collaborations
+            name: Collaborations
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - label: Organisation
+                name: organisation
+                widget: list
+                fields:
+                  - {label: Organisation Name, name: name, widget: string}
+                  - {label: Organisation Image, name: image, widget: image}
+                  - {label: Organisation Link, name: href, widget: text}
           - label: Contact
             name: contact
             widget: object
@@ -33,8 +71,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - {label: Icon, name: icon, widget: string}
-                  - {label: title, name: title, widget: string}
-                  - {label: Paragraph, name: paragraph, widget: text}
+                  - {label: paragraph, name: paragraph, widget: mardown}
 
       - label: "General Settings"
         name: "site"
