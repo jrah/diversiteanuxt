@@ -2,11 +2,12 @@
 
   <div class="absolute pin-t pin-x w-full">
     <div class="container relative z-20 py-4 flex items-center justify-between">
-      <img
-        src="~assets/images/logo.svg"
-        class="w-32 text-white"
-        alt="Logo">
-
+      <a href="/">
+        <img
+          src="~assets/images/logo.svg"
+          class="w-32 text-white"
+          alt="Logo">
+      </a>
       <div
         class="text-white ns:hidden db navMenu-toggle"
         @click="openNav()">
