@@ -32,12 +32,12 @@
       <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 ns:py-10 ns:pr-12 ns:mr-12">
         <no-ssr>
           <v-icon
-            name="book"
+            :name="home.options.dictionary.icon"
             scale="4"
             class="ma-3 text-navy" />
         </no-ssr>
-        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">Tea Dictionary</h1>
-        <p class="leading-normal ma-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos.</p>
+        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.dictionary.heading }}</h1>
+        <p class="leading-normal ma-0">{{ home.options.dictionary.paragraph }}</p>
         <a
           href="#"
           class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Open our tea dictionary<no-ssr><v-icon
@@ -47,36 +47,33 @@
       <div class="py-10">
         <no-ssr>
           <v-icon
-            name="book"
+            :name="home.options.quiz.icon"
             scale="4"
             class="ma-3 text-navy"
             transform="shrink-6 left-4"
           />
         </no-ssr>
-        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">Tea Quiz</h1>
-        <p class="leading-normal ma-0 f4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos.</p>
+        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
+        <p class="leading-normal ma-0 f4">{{ home.options.dictionary.paragraph }}</p>
         <a
           href="#"
-          class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Take our tea quiz<no-ssr><v-icon
+          class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline line-through">Take our tea quiz<no-ssr><v-icon
             name="arrow-right"
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
       </div>
     </section>
     <section class="container py-10 bg-grey-lightest">
-      <h1 class="text-center mb-12 text-4xl">Recent collaboration</h1>
+      <h1 class="text-center mb-12 text-4xl">{{ home.collaborations.title }}</h1>
       <ul class="flex list-reset justify-around">
-        <li><img
-          src="~/assets/images/placeholder/acme-1.svg"
-          alt="Logo"></li>
-        <li><img
-          src="~/assets/images/placeholder/acme-2.svg"
-          alt=""></li>
-        <li><img
-          src="~/assets/images/placeholder/acme-3.svg"
-          alt=""></li>
-        <li><img
-          src="~/assets/images/placeholder/acme-4.svg"
-          alt=""></li>
+        <li
+          v-for="(org, index) in home.collaborations.organisation"
+          :key="index">
+          <a :href="org.href">
+            <img
+              :src="org.image"
+              :alt="org.name">
+          </a>
+        </li>
       </ul>
     </section>
     <section class="p-24">
@@ -84,78 +81,33 @@
         :auto-play="true"
         :navigation-click-target-size="20"
         :per-page="1">
-        <slide>
-          <div class="p-3">
-            <figure class="text-center">
-              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-                <no-ssr>
-                  <v-icon
-                    name="quote-left"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
-                <no-ssr>
-                  <v-icon
-                    name="quote-right"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-              </blockquote>
-              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
-            </figure>
-          </div>
+
+        <slide
+          v-for="(testimonial, index) in home.testimonial"
+          :key="index"
+          class="p-3">
+          <figure class="text-center">
+            <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+              <no-ssr>
+                <v-icon
+                  name="quote-left"
+                  scale="2"
+                  class="m-3 text-grey-dark"
+                />
+              </no-ssr>
+              {{ testimonial.quote }}
+              <no-ssr>
+                <v-icon
+                  name="quote-right"
+                  scale="2"
+                  class="m-3 text-grey-dark"
+                />
+              </no-ssr>
+            </blockquote>
+            <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
+          </figure>
         </slide>
-        <slide>
-          <div class="p-3">
-            <figure class="text-center">
-              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-                <no-ssr>
-                  <v-icon
-                    name="quote-left"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
-                <no-ssr>
-                  <v-icon
-                    name="quote-right"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-              </blockquote>
-              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
-            </figure>
-          </div>
-        </slide>
-        <slide>
-          <div class="p-3">
-            <figure class="text-center">
-              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-                <no-ssr>
-                  <v-icon
-                    name="quote-left"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.
-                <no-ssr>
-                  <v-icon
-                    name="quote-right"
-                    scale="2"
-                    class="m-3 text-grey-dark"
-                  />
-                </no-ssr>
-              </blockquote>
-              <figcaption class="uppercase">— <cite class="author font-bold text-small">James Freeman, Founder and CPO</cite></figcaption>
-            </figure>
-          </div>
-        </slide>
+
       </carousel>
     </section>
   </div>
