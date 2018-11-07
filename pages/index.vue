@@ -55,11 +55,7 @@
         </no-ssr>
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
         <p class="leading-normal ma-0 f4">{{ home.options.dictionary.paragraph }}</p>
-        <a
-          href="#"
-          class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline line-through">Take our tea quiz<no-ssr><v-icon
-            name="arrow-right"
-            class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
+        <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
       </div>
     </section>
     <section class="container py-10 bg-grey-lightest">
