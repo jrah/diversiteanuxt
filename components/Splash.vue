@@ -1,9 +1,9 @@
 <template lang="html">
-  <section class="py-32 bg-grey-lightest text-navy">
+  <section class="py-12 bg-grey-lightest text-navy">
     <div class="container">
       <div class="max-w-xs m-auto text-center">
-        <h1 class="leading-tight mt-0 mb-3 f2 fw8">{{ home.splash.title }}</h1>
-        <p class="leading-normal ma-0 f4">{{ home.splash.text }}</p>
+        <h1 class="mt-0 mb-2 font-bold text-4xl leading-tight">{{ home.splash.title }}</h1>
+        <p class="leading-normal mt-0">{{ home.splash.text }}</p>
       </div>
     </div>
   </section>
