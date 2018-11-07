@@ -39,7 +39,7 @@
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.dictionary.heading }}</h1>
         <p class="leading-normal ma-0">{{ home.options.dictionary.paragraph }}</p>
         <a
-          href="#"
+          href="http://teadictinary.diversitea.co"
           class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Open our tea dictionary<no-ssr><v-icon
             name="arrow-right"
             class="ma-3 align-text-bottom mx-2" /></no-ssr></a>
