@@ -60,7 +60,7 @@
     </section>
     <section class="container py-10 bg-grey-lightest">
       <h1 class="text-center mb-12 text-4xl">{{ home.collaborations.title }}</h1>
-      <ul class="flex list-reset justify-around">
+      <ul class="flex list-reset justify-around flex-wrap">
         <li
           v-for="(org, index) in home.collaborations.organisation"
           :key="index">
