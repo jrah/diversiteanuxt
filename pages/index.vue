@@ -50,7 +50,6 @@
             :name="home.options.quiz.icon"
             scale="4"
             class="ma-3 text-navy"
-            transform="shrink-6 left-4"
           />
         </no-ssr>
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
