@@ -13,7 +13,7 @@
     "title": "Splash title",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
   },
-  "intro": "Find the perfect tea you would love",
+  "intro": "DiversiTea on a mission to transform customers' tea experience by devising a data-driven tea recommendation system.",
   "collaborations": {
     "title": "Recent collaboration",
     "organisation": [
@@ -39,7 +39,7 @@
       }
     ]
   },
-  "title": "DiversiTea",
+  "title": "Find the perfect tea you would love",
   "image": "/images/uploads/landingheader.png",
   "features": {
     "title": "Heading",
