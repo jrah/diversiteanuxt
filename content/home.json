@@ -13,7 +13,7 @@
     "title": "Splash title",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
   },
-  "intro": "From FTGFOP1 graded black tea to chocolate cake tea, DiversiTea has created a tea dictionary that will allow you to explore teas from all around the world.",
+  "intro": "DiversiTea on a mission to transform customers' tea experience by devising a data-driven tea recommendation system.",
   "collaborations": {
     "title": "Recent collaboration",
     "organisation": [
@@ -39,23 +39,23 @@
       }
     ]
   },
-  "title": "Tea Dictionary",
-  "image": "/images/uploads/frank-mckenna-150516-unsplash.jpg",
+  "title": "Find the perfect tea you would love",
+  "image": "/images/uploads/landingheader.png",
   "features": {
-    "title": "Heading",
+    "title": "",
     "block": [
       {
-        "icon": "brands/angellist",
+        "icon": "head",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       },
       {
-        "icon": "brands/vuejs",
+        "icon": "leaf",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       },
       {
-        "icon": "air-freshener",
+        "icon": "hand",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       }
