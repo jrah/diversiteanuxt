@@ -11,7 +11,7 @@
             :key="index"
             :name=" '' + index "
             class="text-center ns:w-1/4">
-            <img :src="'~/assets/images/' + block.icon"  alt="block.icon">
+            <img :src="'~/assets/images/' + block.icon + '.svg'"  :alt="block.icon">
             <h2 class="leading-tight text-lg mt-1 mb-1">{{ block.title }}</h2>
             <p class="leading-normal mt-0 mb-6">{{ block.paragraph }}</p>
           </div>
