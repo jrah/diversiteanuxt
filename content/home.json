@@ -64,8 +64,8 @@
   "options": {
     "dictionary": {
       "icon": "book",
-      "heading": "Tea Dictionary",
-      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
+      "heading": "Tea Quiz",
+      "paragraph": "Tea quiz "
     },
     "quiz": {
       "icon": "book",
