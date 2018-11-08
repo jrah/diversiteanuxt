@@ -9,5 +9,12 @@
       "type": "instagram",
       "href": "www.instagram.com/diversiteabox"
     }
+  ],
+  "nav": [
+    {
+      "text": "Contact us",
+      "href": "mailto: team@diversitea.co",
+      "icon": "envelope"
+    }
   ]
 }
