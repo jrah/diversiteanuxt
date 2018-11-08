@@ -27,12 +27,10 @@
 
     <section class="container text-black ns:flex justify-between">
       <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 ns:py-10 ns:pr-12 ns:mr-12">
-        <no-ssr>
-          <v-icon
-            :name="home.options.dictionary.icon"
-            scale="4"
-            class="ma-3 text-navy" />
-        </no-ssr>
+        <img
+          :src="require('~/assets/images/'+ home.options.dictionary.icon+'.svg')"
+          alt="block.icon"
+        >
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.dictionary.heading }}</h1>
         <p class="leading-normal ma-0">{{ home.options.dictionary.paragraph }}</p>
         <!-- <a
@@ -43,13 +41,10 @@
         <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
       </div>
       <div class="py-10">
-        <no-ssr>
-          <v-icon
-            :name="home.options.quiz.icon"
-            scale="4"
-            class="ma-3 text-navy"
-          />
-        </no-ssr>
+        <img
+          :src="require('~/assets/images/'+ home.options.quiz.icon+'.svg')"
+          alt="block.icon"
+        >
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
         <p class="leading-normal ma-0 f4">{{ home.options.quiz.paragraph }}</p>
         <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
