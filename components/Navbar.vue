@@ -32,7 +32,7 @@
           <div class="ns:hidden inline align-middle">
             <no-ssr>
               <v-icon
-                name="home"
+                :name="item.icon"
                 scale="1.5"/>
             </no-ssr>
           </div>
