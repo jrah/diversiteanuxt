@@ -46,18 +46,18 @@
     "block": [
       {
         "icon": "head",
-        "heading": "Indulge in the exquisite taste of tea",
-        "paragraph": "Enjoy the finest quality loose leaf teas, freshly sourced from the best tea experts in the UK. "
+        "heading": "Exquisite taste",
+        "paragraph": "Enjoy the finest quality loose leaf teas, freshly sourced from the best tea experts in the UK"
       },
       {
         "icon": "leaf",
-        "heading": "As the seasons change, different teas emerge",
-        "paragraph": "Glow your tea musings by focusing on different aspects of nature and the changing seasons in the box."
+        "heading": "Seasonality",
+        "paragraph": "Glow your tea musings by focusing on different aspects of nature and the changing seasons in the box"
       },
       {
         "icon": "hand",
-        "heading": "Our product is bio-degradable",
-        "paragraph": "As much as we think of tea, we think of environmental sustainability of our product. "
+        "heading": "Bio-degradable",
+        "paragraph": "As much as we think of tea, we think of the environmental sustainability of our product"
       }
     ]
   },
