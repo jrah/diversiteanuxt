@@ -28,12 +28,13 @@
           :v-if="item !== null"
           :key="`nav-${index}`"
           :href="item.href"
-          :class="'navMenu--top-item ns:inline block no-underline font-bold mr2-ns align-middle'">
-          <div class="ns:hidden inline align-middle">
+          :class="'navMenu--top-item ns:inline block no-underline font-bold mr2-ns flex items-center'">
+          <div class="ns:hidden ns:mr-0 mr-2">
             <no-ssr>
               <v-icon
                 :name="item.icon"
-                scale="1.5"/>
+                scale="1.5"
+                class="block-important"/>
             </no-ssr>
           </div>
           <span class="inline">{{ item.text }}</span>
@@ -79,7 +80,7 @@ export default {
   // overflow: hidden;
   @apply bg-white;
   .site-canvas {
-    transform: translateX(-60%);
+    transform: translateX(-70%);
     position: fixed;
     overflow: initial;
   }
@@ -94,11 +95,11 @@ export default {
       width: auto;
       box-shadow: 0;
     }
-    width: 60%;
+    width: 70%;
     height: 100%;
     position: absolute;
     top: 0.5em;
-    right: -60%;
+    right: -70%;
 
     &-item {
       @include mq(ns) {
@@ -132,5 +133,9 @@ export default {
       cursor: pointer;
     }
   }
+}
+
+.block-important {
+  display: block !important;
 }
 </style>
