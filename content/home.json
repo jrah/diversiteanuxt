@@ -64,12 +64,12 @@
   "options": {
     "dictionary": {
       "icon": "book",
-      "heading": "Tea Quiz",
-      "paragraph": "Tea quiz "
+      "heading": "Tea Quiz: Your personal guide to world of tea",
+      "paragraph": "There's an infinite array of teas out there. Start exploring with our short Tea Quiz, which finds the tea that will be beautiful to you."
     },
     "quiz": {
       "icon": "book",
-      "heading": "Tea Quiz",
+      "heading": "Tea Dictionary",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda, dolores rerum voluptates. A, veritatis iure harum. Voluptate nulla nisi incidunt quisquam at magni dignissimos."
     }
   },
