@@ -51,7 +51,7 @@
           />
         </no-ssr>
         <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
-        <p class="leading-normal ma-0 f4">{{ home.options.dictionary.paragraph }}</p>
+        <p class="leading-normal ma-0 f4">{{ home.options.quiz.paragraph }}</p>
         <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
       </div>
     </section>
