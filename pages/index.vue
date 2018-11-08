@@ -15,7 +15,7 @@
               :src="require('~/assets/images/'+ block.icon+'.svg')"
               alt="block.icon"
             >
-            <h2 class="leading-tight text-lg mt-1 mb-1">{{ block.title }}</h2>
+            <h2 class="leading-tight text-lg mt-1 mb-1">{{ block.heading }}</h2>
             <p class="leading-normal mt-0 mb-6">{{ block.paragraph }}</p>
           </div>
 
