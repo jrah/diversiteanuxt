@@ -18,12 +18,12 @@
     "title": "Recent collaboration",
     "organisation": [
       {
-        "name": "ACME 1",
-        "image": "/images/uploads/acme-1.svg",
-        "href": "#"
+        "name": "Kopan",
+        "image": "/images/uploads/logo-darkgreen.png",
+        "href": "https://kopan.dk"
       },
       {
-        "name": "ACME 2",
+        "name": "A'dren",
         "image": "/images/uploads/acme-2.svg",
         "href": "#"
       },
@@ -63,32 +63,32 @@
   },
   "options": {
     "dictionary": {
-      "icon": "quiz",
+      "icon": "book",
       "heading": "Tea Quiz: Your personal guide to the world of tea",
       "paragraph": "There's an infinite array of teas out there. Start exploring with our short Tea Quiz, which finds the tea that will be beautiful to you. Get custom tea recommendations based on your particular flavour preferences.\n"
     },
     "quiz": {
-      "icon": "dictionary",
+      "icon": "book",
       "heading": "Tea Dictionary: Peruse the infinite array of teas",
       "paragraph": "This is for the ones who want to try DiversiTea or to make a gift to your beloved ones. From Chocolate cake tea to finest FTGFOP1 graded black tea, we collected diverse teas of unparalleled quality. Simply browse, pick and brew!"
     }
   },
   "testimonial": [
     {
-      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
-      "author": "James Home, CTO"
+      "quote": "It was incredible. Shockingly so and I am still coming down from it...",
+      "author": "Emma Peel"
     },
     {
-      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
-      "author": "Ted Kim, CEO"
+      "quote": "Absolutely stunning service & really lovely tea \n",
+      "author": "Lesley Pyne"
     },
     {
-      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
-      "author": "Kayla Kim, Senior Ruby Developer"
+      "quote": "Always easy to deal with and the tea is so good",
+      "author": "Debbie Harkness"
     },
     {
-      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum excepturi, dicta iusto cupiditate dignissimos molestias, sequi at rerum rem, praesentium animi atque dolore unde.",
-      "author": "Stephanie, Senior Operations Manager"
+      "quote": "Amazing! Absolutely perfect tea and fast shipping!",
+      "author": "Hande Musullulu"
     }
   ]
 }
