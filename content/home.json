@@ -42,7 +42,7 @@
   "title": "Find the perfect tea you would love",
   "image": "/images/uploads/landerheader.png",
   "features": {
-    "title": "Why DiversiTea?",
+    "title": "Our values",
     "block": [
       {
         "icon": "head",
@@ -56,7 +56,7 @@
       },
       {
         "icon": "hand",
-        "heading": "Feature title",
+        "heading": "Value ",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       }
     ]
