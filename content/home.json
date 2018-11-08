@@ -42,12 +42,12 @@
   "title": "Find the perfect tea you would love",
   "image": "/images/uploads/landerheader.png",
   "features": {
-    "title": "",
+    "title": "Why DiversiTea?",
     "block": [
       {
         "icon": "head",
-        "heading": "Feature title",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+        "heading": "Indulge in the exquisite taste of tea",
+        "paragraph": "Enjoy the finest quality loose leaf teas, freshly sourced from the best tea experts in the UK. "
       },
       {
         "icon": "leaf",
