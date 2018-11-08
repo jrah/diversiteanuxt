@@ -42,20 +42,20 @@
   "title": "Find the perfect tea you would love",
   "image": "/images/uploads/landingheader.png",
   "features": {
-    "title": "Heading",
+    "title": "",
     "block": [
       {
-        "icon": "brands/angellist",
+        "icon": "head",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       },
       {
-        "icon": "brands/vuejs",
+        "icon": "leaf",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       },
       {
-        "icon": "air-freshener",
+        "icon": "hand",
         "heading": "Feature title",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
       }
