@@ -40,19 +40,19 @@
     ]
   },
   "title": "Find the perfect tea you would love",
-  "image": "/images/uploads/landingheader.png",
+  "image": "/images/uploads/landerheader.png",
   "features": {
-    "title": "",
+    "title": "Why DiversiTea?",
     "block": [
       {
         "icon": "head",
-        "heading": "Feature title",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+        "heading": "Indulge in the exquisite taste of tea",
+        "paragraph": "Enjoy the finest quality loose leaf teas, freshly sourced from the best tea experts in the UK. "
       },
       {
         "icon": "leaf",
-        "heading": "Feature title",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, inventore!"
+        "heading": "As the seasons change, different teas emerge",
+        "paragraph": "Glow your tea musings by focusing on different aspects of nature and the changing seasons in the box."
       },
       {
         "icon": "hand",
