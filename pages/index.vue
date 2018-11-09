@@ -56,10 +56,11 @@
     </section>
     <section class="container py-10 bg-grey-lightest">
       <h1 class="text-center text-4xl mb-12">{{ home.collaborations.title }}</h1>
-      <ul class="flex list-reset justify-around flex-wrap">
+      <ul class="flex list-reset justify-around flex-wrap items-center">
         <li
           v-for="(org, index) in home.collaborations.organisation"
-          :key="index">
+          :key="index"
+          class="w-48">
           <a :href="org.href">
             <img
               :src="org.image"
