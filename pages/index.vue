@@ -54,20 +54,22 @@
         <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
       </div>
     </section>
-    <section class="container py-10 bg-grey-lightest">
-      <h1 class="text-center text-4xl mb-12">{{ home.collaborations.title }}</h1>
-      <ul class="flex list-reset justify-around flex-wrap items-center">
-        <li
-          v-for="(org, index) in home.collaborations.organisation"
-          :key="index"
-          class="w-48">
-          <a :href="org.href">
-            <img
-              :src="org.image"
-              :alt="org.name">
-          </a>
-        </li>
-      </ul>
+    <section class="py-10 bg-grey-lightest">
+      <div class="container">
+        <h1 class="text-center text-4xl mb-12">{{ home.collaborations.title }}</h1>
+        <ul class="flex list-reset ns:justify-around justify-center flex-wrap items-center">
+          <li
+            v-for="(org, index) in home.collaborations.organisation"
+            :key="index"
+            class="w-48 m-3 text-center">
+            <a :href="org.href">
+              <img
+                :src="org.image"
+                :alt="org.name">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="p-24">
       <carousel
