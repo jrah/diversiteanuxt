@@ -52,7 +52,8 @@ module.exports = {
     '@nuxtjs/axios',
     'nuxt-netlify-cms',
     '@nuxtjs/markdownit',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    'nuxt-validate'
   ],
   netlifyCms: {
     adminPath: 'secure'
