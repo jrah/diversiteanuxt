@@ -102,6 +102,12 @@
 
       </carousel>
     </section>
+
+    <section class="container flex">
+      <div class="ns:w-1/2">
+        <app-form/>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -109,11 +115,13 @@
 import home from '~/content/home.json'
 import appHeader from '~/components/Header.vue'
 import splash from '~/components/Splash.vue'
+import appForm from '~/components/Form.vue'
 
 export default {
   components: {
     appHeader,
-    splash
+    splash,
+    appForm
   },
   data() {
     return {
