@@ -27,35 +27,40 @@
 
     <splash/>
 
-    <section class="container text-black ns:flex justify-between">
-      <div class="ns:border-grey-lightest ns:border-solid ns:border-r-4 pt-10 ns:py-10 ns:pr-12 ns:mr-12">
-        <div class="w-32">
-          <img
-            :src="require('~/assets/images/'+home.options.dictionary.icon+'.svg')"
-            alt="block.icon"
-          >
+    <section class="bg-grey-lightest text-black">
+      <div class="container l:flex justify-between">
+        <div class="bg-white p-10 mx-2 l:mb-0 mb-3">
+          <div class="w-32">
+            <img
+              :src="require('~/assets/images/'+home.options.dictionary.icon+'.svg')"
+              alt="block.icon"
+            >
+          </div>
+          <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.dictionary.heading }}</h1>
+          <p class="leading-normal ma-0">{{ home.options.dictionary.paragraph }}</p>
+          <!-- <a
+            href="http://teadictinary.diversitea.co"
+            class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Open our tea dictionary<no-ssr><v-icon
+              name="arrow-right"
+              class="ma-3 align-text-bottom mx-2" /></no-ssr></a> -->
+          <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
         </div>
-        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.dictionary.heading }}</h1>
-        <p class="leading-normal ma-0">{{ home.options.dictionary.paragraph }}</p>
-        <!-- <a
-          href="http://teadictinary.diversitea.co"
-          class="inline-block my-3 font-bold text-sm text-navy hover:text-navy-lighter no-underline">Open our tea dictionary<no-ssr><v-icon
-            name="arrow-right"
-            class="ma-3 align-text-bottom mx-2" /></no-ssr></a> -->
-        <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
-      </div>
-      <div class="py-10">
-        <div class="w-32">
-          <img
-            :src="require('~/assets/images/'+home.options.quiz.icon+'.svg')"
-            alt="block.icon"
-          >
+
+        <div class="bg-white p-10 mx-2">
+          <div class="w-32">
+            <img
+              :src="require('~/assets/images/'+home.options.quiz.icon+'.svg')"
+              alt="block.icon"
+            >
+          </div>
+          <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
+          <p class="leading-normal ma-0 f4">{{ home.options.quiz.paragraph }}</p>
+          <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
         </div>
-        <h1 class="leading-tight mt-2 mb-4 text-lg font-bold text-navy">{{ home.options.quiz.heading }}</h1>
-        <p class="leading-normal ma-0 f4">{{ home.options.quiz.paragraph }}</p>
-        <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
       </div>
+
     </section>
+
     <section class="py-10 bg-grey-lightest">
       <div class="container">
         <h1 class="text-center text-4xl mb-12">{{ home.collaborations.title }}</h1>
