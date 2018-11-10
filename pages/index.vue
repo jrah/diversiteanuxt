@@ -29,7 +29,7 @@
 
     <section class="bg-grey-lightest text-black">
       <div class="container l:flex justify-between">
-        <div class="bg-white p-10 mx-2 l:mb-0 mb-3 border-grey-lighter border-solid border-2 rounded-sm">
+        <div class="bg-white p-10 mx-2 l:mb-0 mb-3 border-grey-lighter border-solid border-2 rounded-sm shadow">
           <div class="w-32">
             <img
               :src="require('~/assets/images/'+home.options.dictionary.icon+'.svg')"
