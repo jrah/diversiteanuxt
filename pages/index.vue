@@ -46,7 +46,7 @@
           <span class="inline-block my-3 font-bold text-sm text-grey no-underline">Coming Soon</span>
         </div>
 
-        <div class="bg-white p-10 mx-2">
+        <div class="bg-white p-10 mx-2 border-grey-lighter border-solid border-2 rounded-sm shadow">
           <div class="w-32">
             <img
               :src="require('~/assets/images/'+home.options.quiz.icon+'.svg')"
