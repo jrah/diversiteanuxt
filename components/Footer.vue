@@ -29,17 +29,6 @@
           <p class="font-bold">No icons</p>
         </div>
       </div>
-      <ul class="list-reset flex justify-center">
-        <li class="inline-block mr-3"><a
-          href="#"
-          class="no-underline text-navy">Terms of Service</a></li>
-        <li class="inline-block mr-3"><a
-          href="#"
-          class="no-underline text-navy">Privacy Policy</a></li>
-        <li class="inline-block"><a
-          href="#"
-          class="no-underline text-navy">GDPR</a></li>
-      </ul>
     </div>
   </footer>
 </template>
