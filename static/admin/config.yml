@@ -89,6 +89,14 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Icon, name: icon, widget: string}
                   - {label: paragraph, name: paragraph, widget: mardown}
+          - label: Icon Splash
+            name: icon_splash
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Anchor, name: anchor, widget: string}
+              - {label: Href, name: href, widget: string}
 
       - label: "General Settings"
         name: "site"
