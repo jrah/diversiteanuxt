@@ -37,4 +37,28 @@ html {
   position: relative;
   overflow: hidden;
 }
+
+.link {
+  @include mq(ns) {
+    &:after {
+      content: '';
+      @apply bg-navy;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 2px;
+      transform: scaleX(0);
+      opacity: 0;
+      transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out,
+        -webkit-transform 0.4s ease-in-out;
+    }
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+}
 </style>
