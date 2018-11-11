@@ -100,7 +100,21 @@
           class="p-3">
           <figure class="text-center">
             <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+              <no-ssr>
+                <v-icon
+                  name="quote-left"
+                  scale="2"
+                  class="m-3 text-grey-dark"
+                />
+              </no-ssr>
               {{ testimonial.quote }}
+              <no-ssr>
+                <v-icon
+                  name="quote-right"
+                  scale="2"
+                  class="m-3 text-grey-dark"
+                />
+              </no-ssr>
             </blockquote>
             <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
           </figure>
