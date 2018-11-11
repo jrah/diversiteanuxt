@@ -126,11 +126,11 @@
     <section class="bg-brown py-10 relative">
       <div class="container flex justify-between">
         <div class="ns:w-50 text-navy">
-          <h2 class="mb-2 text-4xl leading-tight">Have any questions?</h2>
-          <p class="leading-normal mt-0 mb-4">Please feel free to email us below</p>
+          <h2 class="mb-2 text-4xl leading-tight">{{ home.icon_splash.title }}</h2>
+          <p class="leading-normal mt-0 mb-4">{{ home.icon_splash.text }}</p>
           <a
-            href="mailto:team@diversitea.co"
-            class="no-underline inline-block bg-transparent hover:bg-navy text-navy-dark font-semibold hover:text-white py-2 px-4 border border-navy hover:border-transparent rounded mb-2 border-white">Click Here</a>
+            :href="home.icon_splash.href"
+            class="no-underline inline-block bg-transparent hover:bg-navy text-navy-dark font-semibold hover:text-white py-2 px-4 border border-navy hover:border-transparent rounded mb-2 border-white">{{ home.icon_splash.anchor }}</a>
         </div>
         <div class="ns:w-50 ns:block hidden">
           <img
