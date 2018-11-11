@@ -36,7 +36,7 @@
 
     <section
       :style="{'background-image': 'url(' + require('~/assets/images/bg.svg') + ')'}"
-      class="bg-grey-lightest text-black bg-contain py-12 bg-no-repeat bg-center">
+      class="bg-grey-lightest text-black l:bg-contain bg-cover py-12 bg-no-repeat bg-center">
       <div class="container l:flex justify-between">
         <div class="bg-white p-10 mx-2 l:mb-0 mb-3 border-grey-lighter border-solid border-2 rounded-sm shadow">
           <div class="w-32">
