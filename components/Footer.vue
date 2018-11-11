@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container flex justify-between items-center">
+    <div class="container flex justify-between items-center p-8">
       <small class="block font-black">© 2018 {{ site.title }} </small>
       <ul
         v-if="icons"
