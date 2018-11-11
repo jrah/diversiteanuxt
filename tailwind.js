@@ -130,7 +130,9 @@ let colors = {
   'navy-dark': '#2B3A5B',
   navy: '#25324E',
   'navy-light': '#3c475f',
-  'navy-lighter': '#49639A'
+  'navy-lighter': '#49639A',
+
+  brown: '#F6D9CA'
 }
 
 module.exports = {
