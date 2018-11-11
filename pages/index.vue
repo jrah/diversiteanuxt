@@ -123,9 +123,21 @@
       </carousel>
     </section>
 
-    <section class="container flex">
-      <div class="ns:w-1/2">
-        <app-form/>
+    <section class="bg-brown py-16 relative">
+      <div class="container flex justify-between">
+        <div class="ns:w-50 text-navy">
+          <h2 class="mb-2 text-4xl leading-tight">Have any questions?</h2>
+          <p class="leading-normal mt-0 mb-4">Please feel free to email us below</p>
+          <a
+            href="mailto:team@diversitea.co"
+            class="no-underline inline-block bg-transparent hover:bg-navy text-navy-dark font-semibold hover:text-white py-2 px-4 border border-navy hover:border-transparent rounded mb-2 border-white">Click Here</a>
+        </div>
+        <div class="ns:w-50 ns:block hidden">
+          <img
+            src="~/assets/images/newsletter.svg"
+            class="w-64 -mt-32"
+            alt="Newsletter">
+        </div>
       </div>
     </section>
   </div>
@@ -135,13 +147,11 @@
 import home from '~/content/home.json'
 import appHeader from '~/components/Header.vue'
 import splash from '~/components/Splash.vue'
-import appForm from '~/components/Form.vue'
 
 export default {
   components: {
     appHeader,
-    splash,
-    appForm
+    splash
   },
   data() {
     return {
@@ -152,4 +162,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.pin-container {
+  position: absolute;
+  &-r {
+    right: 4rem;
+  }
+}
 </style>
