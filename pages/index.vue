@@ -25,7 +25,14 @@
       </div>
     </section>
 
-    <splash/>
+    <section class="bg-grey-lightest text-navy">
+      <div class="container pt-12 bg-grey-lightest text-navy">
+        <div class="max-w-md m-auto text-center">
+          <h1 class="mt-0 mb-2 font-bold text-4xl leading-tight">{{ home.splash.title }}</h1>
+          <p class="leading-normal mt-0">{{ home.splash.text }}</p>
+        </div>
+      </div>
+    </section>
 
     <section
       :style="{'background-image': 'url(' + require('~/assets/images/bg.svg') + ')'}"
