@@ -221,6 +221,22 @@ module.exports = {
       'Liberation Mono',
       'Courier New',
       'monospace'
+    ],
+    raleway: [
+      '"Raleway"',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Helvetica Neue',
+      'sans-serif'
+    ],
+    roboto: [
+      '"Roboto"',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Helvetica Neue',
+      'sans-serif'
     ]
   },
 
