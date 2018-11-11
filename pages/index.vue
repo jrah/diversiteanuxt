@@ -87,7 +87,8 @@
         </ul>
       </div>
     </section>
-    <section class="ns:m-24 m-4 relative">
+    <section class="ns:m-16 my-10 container relative">
+      <h1 class="text-center text-4xl mb-12">Testimonials</h1>
       <carousel
         :auto-play="true"
         :navigation-click-target-size="20"
