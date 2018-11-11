@@ -123,7 +123,7 @@
       </carousel>
     </section>
 
-    <section class="bg-brown py-16 relative">
+    <section class="bg-brown py-10 relative">
       <div class="container flex justify-between">
         <div class="ns:w-50 text-navy">
           <h2 class="mb-2 text-4xl leading-tight">Have any questions?</h2>
