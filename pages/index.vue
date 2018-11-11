@@ -87,7 +87,21 @@
         </ul>
       </div>
     </section>
-    <section class="p-24">
+    <section class="ns:m-24 m-4 relative">
+      <no-ssr>
+        <v-icon
+          name="quote-left"
+          scale="3"
+          class="m-3 text-grey-light absolute pin-t pin-l"
+        />
+      </no-ssr>
+      <no-ssr>
+        <v-icon
+          name="quote-right"
+          scale="3"
+          class="m-3 text-grey-light absolute pin-b pin-r"
+        />
+      </no-ssr>
       <carousel
         :auto-play="true"
         :navigation-click-target-size="20"
@@ -97,23 +111,10 @@
           v-for="(testimonial, index) in home.testimonial"
           :key="index"
           class="p-3">
-          <figure class="text-center">
-            <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-              <no-ssr>
-                <v-icon
-                  name="quote-left"
-                  scale="2"
-                  class="m-3 text-grey-dark"
-                />
-              </no-ssr>
+
+          <figure class="text-center relative">
+            <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker relative p-5 z-20">
               {{ testimonial.quote }}
-              <no-ssr>
-                <v-icon
-                  name="quote-right"
-                  scale="2"
-                  class="m-3 text-grey-dark"
-                />
-              </no-ssr>
             </blockquote>
             <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
           </figure>
