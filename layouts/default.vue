@@ -24,6 +24,23 @@ html {
   @apply font-sans font-normal text-black leading-normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-raleway;
+}
+
+p,
+blockquote,
+nav,
+button,
+a {
+  @apply font-roboto;
+}
+
 .container {
   @apply px-8;
   @include mq(ns) {
