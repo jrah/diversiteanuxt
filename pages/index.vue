@@ -89,6 +89,20 @@
     </section>
     <section class="ns:m-16 my-10 container relative">
       <h1 class="text-center text-4xl mb-12">Testimonials</h1>
+      <no-ssr>
+        <v-icon
+          name="quote-left"
+          scale="3"
+          class="m-3 text-grey-light absolute pin-t pin-l"
+        />
+      </no-ssr>
+      <no-ssr>
+        <v-icon
+          name="quote-right"
+          scale="3"
+          class="m-3 text-grey-light absolute pin-b pin-r"
+        />
+      </no-ssr>
       <carousel
         :auto-play="true"
         :navigation-click-target-size="20"
