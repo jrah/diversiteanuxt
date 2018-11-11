@@ -88,20 +88,6 @@
       </div>
     </section>
     <section class="ns:m-24 m-4 relative">
-      <no-ssr>
-        <v-icon
-          name="quote-left"
-          scale="3"
-          class="m-3 text-grey-light absolute pin-t pin-l"
-        />
-      </no-ssr>
-      <no-ssr>
-        <v-icon
-          name="quote-right"
-          scale="3"
-          class="m-3 text-grey-light absolute pin-b pin-r"
-        />
-      </no-ssr>
       <carousel
         :auto-play="true"
         :navigation-click-target-size="20"
