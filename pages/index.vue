@@ -88,40 +88,22 @@
       </div>
     </section>
 
-    <section class="p-24">
-      <carousel
-        :auto-play="true"
-        :navigation-click-target-size="20"
-        :per-page="1">
+    <carousel
+      :auto-play="true"
+      :navigation-click-target-size="20"
+      :per-page="1"
+      class="p-24 relative">
+      <slide
+        v-for="(testimonial, index) in home.testimonial"
+        :key="index"
+        class="p-3">
+        <figure class="text-center">
+          <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">{{ testimonial.quote }}</blockquote>
+          <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
+        </figure>
+      </slide>
 
-        <slide
-          v-for="(testimonial, index) in home.testimonial"
-          :key="index"
-          class="p-3">
-          <figure class="text-center">
-            <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-              <no-ssr>
-                <v-icon
-                  name="quote-left"
-                  scale="2"
-                  class="m-3 text-grey-dark"
-                />
-              </no-ssr>
-              {{ testimonial.quote }}
-              <no-ssr>
-                <v-icon
-                  name="quote-right"
-                  scale="2"
-                  class="m-3 text-grey-dark"
-                />
-              </no-ssr>
-            </blockquote>
-            <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
-          </figure>
-        </slide>
-
-      </carousel>
-    </section>
+    </carousel>
 
     <section class="bg-grey-lightest py-10 relative">
       <div class="container flex justify-between">
@@ -139,8 +121,7 @@
             alt="Newsletter">
         </div>
       </div>
-    </section>
-  </div>
+  </section></div>
 </template>
 
 <script>
