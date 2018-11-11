@@ -17,8 +17,8 @@
   "icon_splash": {
     "title": "Have any questions?",
     "text": "Please feel free to email us below",
-    "anchor": "Click Here",
-    "href": "#"
+    "anchor": "Email us",
+    "href": "mailto:team@diversitea.co"
   },
   "collaborations": {
     "title": "Recent collaboration",
