@@ -14,6 +14,12 @@
     "text": "Each month DiversiTea selects two different teas, pack them into our environmental friendly package and deliver them directly to your doorstep."
   },
   "intro": "Let us understand your taste first then sit back and relax",
+  "icon_splash": {
+    "title": "Have any questions?",
+    "text": "Please feel free to email us below",
+    "anchor": "Click Here",
+    "href": "#"
+  },
   "collaborations": {
     "title": "Recent collaboration",
     "organisation": [
