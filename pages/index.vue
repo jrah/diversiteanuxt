@@ -110,7 +110,7 @@
       </carousel>
     </section>
 
-    <section class="bg-brown py-10 relative">
+    <section class="bg-grey-lightest py-10 relative">
       <div class="container flex justify-between">
         <div class="ns:w-50 text-navy">
           <h2 class="mb-2 text-4xl leading-tight">{{ home.icon_splash.title }}</h2>
