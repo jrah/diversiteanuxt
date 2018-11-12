@@ -13,7 +13,7 @@
     "title": "How DiversiTea Works",
     "text": "Each month DiversiTea selects two different teas, pack them into our environmental friendly package and deliver them directly to your doorstep."
   },
-  "intro": "Let us determine the right teas for you based on your personal taste",
+  "intro": "Let us determine the right tea for you based on your personal taste",
   "icon_splash": {
     "title": "Have any questions?",
     "text": "Please feel free to email us below",
@@ -45,7 +45,7 @@
       }
     ]
   },
-  "title": "Find the perfect tea you love",
+  "title": "Find your perfect tea",
   "image": "/images/uploads/nik-macmillan-577478-unsplash2.jpg",
   "features": {
     "title": "Our Values",
@@ -63,7 +63,7 @@
       {
         "icon": "hand",
         "heading": "Bio-degradable",
-        "paragraph": "As much as we think of tea, we think of the environmental sustainability of our product"
+        "paragraph": "When it comes to our tea, environmental sustainability is a crucial part of our process. "
       }
     ]
   },
