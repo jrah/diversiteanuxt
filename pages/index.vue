@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="py-16 container">
+    <section class="py-12 container">
       <h1 class="text-center text-4xl mb-12">Testimonials</h1>
 
       <no-ssr placeholder="Loading...">
