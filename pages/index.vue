@@ -94,6 +94,7 @@
       <no-ssr placeholder="Loading...">
         <carousel
           :auto-play="true"
+          :pagination-active-color="'#25324e'"
           :navigation-click-target-size="20"
           :per-page="1">
 
