@@ -90,23 +90,23 @@
 
     <section class="p-24">
       <no-ssr placeholder="Loading...">
-      <carousel
-        :auto-play="true"
-        :navigation-click-target-size="20"
-        :per-page="1">
+        <carousel
+          :auto-play="true"
+          :navigation-click-target-size="20"
+          :per-page="1">
 
-        <slide
-          v-for="(testimonial, index) in home.testimonial"
-          :key="index"
-          class="p-3">
-          <figure class="text-center">
-            <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
-              {{ testimonial.quote }}
-            <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
-          </figure>
-        </slide>
+          <slide
+            v-for="(testimonial, index) in home.testimonial"
+            :key="index"
+            class="p-3">
+            <figure class="text-center">
+              <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
+                {{ testimonial.quote }}
+                <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
+            </blockquote></figure>
+          </slide>
 
-      </carousel>
+        </carousel>
       </no-ssr> 
     </section>
 
