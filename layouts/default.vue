@@ -1,6 +1,6 @@
 <template>
   <div class="site-canvas">
-    <!-- <app-navbar/> -->
+    <app-navbar/>
     <nuxt/>
     <app-footer/>
   </div>
