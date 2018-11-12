@@ -105,7 +105,7 @@
             <figure class="text-center">
               <blockquote class="italic font-normal text-2xl mb-3 text-grey-darker">
                 {{ testimonial.quote }}
-                <figcaption class="uppercase">— <cite class="author font-bold text-small">{{ testimonial.author }}</cite></figcaption>
+                <figcaption class="uppercase"> <cite class="author font-bold text-sm">- {{ testimonial.author }}</cite></figcaption>
             </blockquote></figure>
           </slide>
 
