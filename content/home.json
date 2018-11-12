@@ -11,9 +11,9 @@
   },
   "splash": {
     "title": "How DiversiTea Works",
-    "text": "Each month DiversiTea selects two different teas, pack them into our environmental friendly package and deliver them directly to your doorstep."
+    "text": "Each month DiversiTea selects two different teas, packs them into our environmentally friendly package and delivers them directly to your doorstep."
   },
-  "intro": "Let us determine the right teas for you based on your personal taste",
+  "intro": "Let us determine the right tea for you based on your personal taste",
   "icon_splash": {
     "title": "Have any questions?",
     "text": "Please feel free to email us below",
@@ -45,7 +45,7 @@
       }
     ]
   },
-  "title": "Find the perfect tea you love",
+  "title": "Find your perfect tea",
   "image": "/images/uploads/nik-macmillan-577478-unsplash2.jpg",
   "features": {
     "title": "Our Values",
@@ -63,7 +63,7 @@
       {
         "icon": "hand",
         "heading": "Bio-degradable",
-        "paragraph": "As much as we think of tea, we think of the environmental sustainability of our product"
+        "paragraph": "When it comes to our tea, environmental sustainability is a crucial part of our process. "
       }
     ]
   },
@@ -71,12 +71,12 @@
     "dictionary": {
       "icon": "quiz",
       "heading": "Tea Quiz: Personal guide to the world of tea",
-      "paragraph": "There's an infinite array of teas out there. Start exploring with our short Tea Quiz, which finds the tea that will be beautiful to you. Get custom tea recommendations based on your particular flavour preferences.\n"
+      "paragraph": "There's an infinite array of teas out there. Start exploring with our short Tea Quiz, which will help you find the tea that suits you best. Get custom \ntea recommendations based on your particular flavour preferences."
     },
     "quiz": {
       "icon": "dictionary",
-      "heading": "Tea Dictionary: Peruse the infinite array of teas",
-      "paragraph": "From Chocolate cake tea to finest FTGFOP1 graded black tea, we collected diverse teas of unparalleled quality. Our tea would make a wonderful gift for yourself or a loved one. Simply browse, pick and brew! "
+      "heading": "Tea Dictionary: Peruse our infinite array of teas",
+      "paragraph": "From chocolate cake tea to the finest FTGFOP1 graded black tea, we have collected diverse teas of unparalleled quality. Our tea would make a wonderful gift for yourself or a loved one. Simply browse, pick and brew! "
     }
   },
   "testimonial": [
