@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="p-24">
+    <section class="py-16 container">
       <no-ssr placeholder="Loading...">
         <carousel
           :auto-play="true"
@@ -107,7 +107,7 @@
           </slide>
 
         </carousel>
-      </no-ssr> 
+      </no-ssr>
     </section>
 
     <section class="bg-grey-lightest py-10 relative">
