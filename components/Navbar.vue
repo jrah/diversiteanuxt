@@ -8,16 +8,7 @@
           class="w-32 text-white"
           alt="Logo">
       </a>
-      <div
-        class="text-white ns:hidden db navMenu-toggle"
-        @click="openNav()">
-        <no-ssr>
-          <v-icon
-            name="bars"
-            scale="2"
-            class="block"/>
-        </no-ssr>
-      </div>
+
 
       <nav
         :class="{ isOpen: isOpen }"
