@@ -2,7 +2,7 @@
   "name": "diversiteanuxt",
   "title": "DiversiTea",
   "version": "1.0.0",
-  "description": "My cat&#39;s pajamas Nuxt.js project",
+  "description": "DiversiTea - Loose leaf tea recommedations",
   "author": "James Home",
   "private": true,
   "scripts": {
