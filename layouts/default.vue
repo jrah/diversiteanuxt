@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import appNavbar from '~/components/Navbar.vue'
+// import appNavbar from '~/components/Navbar.vue'
 import appFooter from '~/components/Footer.vue'
 
 export default {
   components: {
-    appFooter,
-    appNavbar
+    // appNavbar,
+    appFooter
   }
 }
 </script>
