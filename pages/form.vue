@@ -16,8 +16,8 @@
             class="text-grey-darkest">
             <h2 class="leading-tight mt-0 mb-3">{{ question.subheading }}</h2>
             <p class="leading-normal mt-0 mb-3">{{ question.paragraph }}</p>
-            <div 
-              v-for="(input, index) in question.inputs" 
+            <div
+              v-for="(input, index) in question.inputs"
               :key="index">
               <div class="mb-2">
                 <div class="ns:w-1/3"/>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import Radio from '~/components/Radio.vue'
+import Radio from '~/components/input/Radio.vue'
 import Questions from '~/content/questions.json'
 
 const quiz = Questions
