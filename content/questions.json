@@ -3,59 +3,45 @@
   "questions": [
     {
       "heading": "Are you adventurous?",
+      "subheading": "Lorem ipsum dolor sit amet.",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?",
       "inputs": [
         {
           "type": "radio",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "text": "How adventerous are you?",
+          "value": "Lorem ipsum dolor sit."
         },
         {
           "type": "radio",
           "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "value": "Lorem ipsum dolor sit."
         },
         {
           "type": "radio",
           "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "value": "Lorem ipsum dolor sit."
         }
       ]
     },
     {
       "heading": "Heading",
+      "subheading": "Lorem ipsum dolor sit amet.",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?",
       "inputs": [
         {
           "type": "radio",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "text": "How adventerous are you?",
+          "value": "Lorem ipsum dolor sit."
         },
         {
           "type": "radio",
           "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "value": "Lorem ipsum dolor sit."
         },
         {
           "type": "radio",
           "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
-            "responses": {
-            "text": "Lorem ipsum dolor.",
-            "value": "Lorem ipsum dolor sit."
-            }
+          "value": "Lorem ipsum dolor sit."
         }
       ]
     }
