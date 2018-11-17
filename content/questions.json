@@ -1,0 +1,61 @@
+{
+  "title": "Diversitea Quiz",
+  "questions": [
+    {
+      "inputs": [
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        },
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        },
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        },
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        },
+        {
+          "type": "radio",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+            "responses": {
+            "text": "Lorem ipsum dolor.",
+            "value": "Lorem ipsum dolor sit."
+            }
+        }
+      ]
+    }
+  ]
+}
