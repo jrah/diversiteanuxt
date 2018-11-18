@@ -51,7 +51,7 @@
                     <input
                       :value="input.value"
                       v-model="userInputs[index]"
-                      :name="index"
+                      :name="questionIndex"
                       checked
                       type="radio"> {{ input.text }}
                   </label>
