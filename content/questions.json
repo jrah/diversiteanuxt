@@ -2,17 +2,17 @@
   "questions": [
     {
       "heading": "Are you adventurous?",
-      "subheading": "Lorem ipsum dolor sit amet.",
+      "subheading": "Are you adventerous?",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?",
       "inputs": [
         {
           "type": "radio",
-          "text": "How adventerous are you?",
+          "text": "Very",
           "value": "Lorem ipsum dolor sit."
         },
         {
           "type": "radio",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eius nostrum voluptatibus soluta, repellendus dolores.",
+          "text": "Not much",
           "value": "Lorem ipsum dolor sit."
         },
         {
