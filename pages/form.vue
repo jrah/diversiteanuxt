@@ -23,13 +23,10 @@
       class="max-w-lg mx-auto"
       style="max-height: 28rem; height: 95%; width:95%;">
       <div
-        v-for="(question, index) in quiz.questions"
-        :key="index">
+      >
         <h1
-          v-show="index === questionIndex"
-          class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
+          class="text-grey-dark font-light leading-tight text-xl mb-3"/>
         <div
-          v-show="index === questionIndex"
           class="ns:rounded-lg ns:shadow-md flex ns:h-full">
           <div
             style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
@@ -37,25 +34,23 @@
           <div
             class="bg-grey-lightest ns:w-3/4 p-5 rounded-r-lg relative">
             <div>
-              <h1 class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
               <div
                 class="text-grey-darkest">
-                <h2 class="leading-tight mt-0 mb-3">{{ question.subheading }}</h2>
-                <p class="leading-normal mt-0 mb-3">{{ question.paragraph }}</p>
-                <div
-                  v-for="(input, index) in question.inputs"
-                  :key="index"
-                  class="mb-2">
-                  <div class="ns:w-1/3"/>
-                  <label>
-                    <input
-                      :value="input.value"
-                      v-model="userInputs[index]"
-                      :name="questionIndex"
-                      checked
-                      type="radio"> {{ input.text }}
-                  </label>
-                  <!-- <radio :value="input.value"/> -->
+
+                <div v-if="!completedQuestionnaire">
+                  <Question
+                    v-for="(question, index) in questions"
+                    v-if="questionIndex === index"
+                    :question="question"
+                    :question-index="questionIndex"
+                    :key="index">
+                    <h2 class="leading-tight mt-0 mb-3">{{ question.heading }}</h2>
+                    <p class="leading-normal mt-0 mb-3"/>
+                  </Question>
+                </div>
+                <div v-else>
+                  <h2 class="leading-tight mt-0 mb-3">Thanks for your entries.</h2>
+                  <p class="leading-normal mt-0 mb-3">Do you want to buy a subscription or try a £1 sample?</p>
                 </div>
                 <div class="absolute pin-b pin-r p-3">
                   <button
@@ -63,6 +58,7 @@
                     class="text-navy hover:text-navy-light font-bold py-2 px-4"
                     @click="prev">Back</button>
                   <button
+                    :disabled="completedQuestionnaire"
                     class="bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded"
                     @click="next">Next</button>
                 </div>
@@ -81,31 +77,41 @@
 
 <script>
 import Radio from '~/components/input/Radio.vue'
-import Questions from '~/content/questions.json'
-
-const quiz = Questions
-console.log(quiz)
+import { Question } from '~/components/index'
+import { questions } from '~/content/questions.json'
 export default {
   components: {
-    Radio
+    Radio,
+    Question
   },
   props: {},
   data() {
     return {
       questionIndex: 0,
-      userInputs: Array(),
-      quiz: quiz
+      questions
     }
+  },
+  computed: {
+    completedQuestionnaire() {
+      if (!questions) {
+        return false
+      }
+      return this.questionIndex >= questions.length
+    }
+  },
+  updated() {
+    console.log('Form:', this.form)
+    console.log('Question index:', this.questionIndex)
   },
   methods: {
     // go to next question
     next: function() {
-      this.questionIndex++
+      this.questionIndex += 1
       // eslint-no-console
       // console.log(this.userInputs)
     },
     prev: function() {
-      this.questionIndex--
+      this.questionIndex -= 1
     }
   }
 }
