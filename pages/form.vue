@@ -25,7 +25,10 @@
       <div
       >
         <h1
-          class="text-grey-dark font-light leading-tight text-xl mb-3"/>
+          v-for="(question, index) in questions"
+          v-if="questionIndex === index"
+          :key="index"
+          class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
         <div
           class="ns:rounded-lg ns:shadow-md flex ns:h-full">
           <div
@@ -43,10 +46,7 @@
                     v-if="questionIndex === index"
                     :question="question"
                     :question-index="questionIndex"
-                    :key="index">
-                    <h2 class="leading-tight mt-0 mb-3">{{ question.heading }}</h2>
-                    <p class="leading-normal mt-0 mb-3"/>
-                  </Question>
+                    :key="index"/>
                 </div>
                 <div v-else>
                   <h2 class="leading-tight mt-0 mb-3">Thanks for your entries.</h2>

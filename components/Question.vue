@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p class="leading-normal mt-0 mb-3">{{ question.paragraph }}</p>
     <div
       v-for="(input, index) in question.inputs"
       :key="index"
