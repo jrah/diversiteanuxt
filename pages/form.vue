@@ -70,8 +70,8 @@
       class="">
       <h2 class="text-grey-dark font-light leading-tight text-xl5 mb-6 text-center">Please select your choice</h2>
 
-      <div class="flex container">
-        <div class="px-12">
+      <div class="ns:flex container">
+        <div class="ns:px-12 ns:py-0 py-4">
           <div class="rounded overflow-hidden shadow-lg bg-white">
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 text-navy">£1.50 Tea Curation</div>
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="px-12">
+        <div class="ns:px-12 ns:py-0 py-4">
           <div class="rounded overflow-hidden shadow-lg bg-white">
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 text-navy">Subscription Service</div>
