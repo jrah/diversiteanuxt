@@ -72,7 +72,7 @@
 
       <div class="ns:flex container">
         <div class="ns:px-12 ns:py-0 py-4">
-          <div class="rounded overflow-hidden shadow-lg bg-white">
+          <div class="rounded overflow-hidden shadow-lg bg-white max-w-xl">
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 text-navy">£1.50 Tea Curation</div>
               <p class="text-navy text-base">
@@ -87,7 +87,7 @@
           </div>
         </div>
         <div class="ns:px-12 ns:py-0 py-4">
-          <div class="rounded overflow-hidden shadow-lg bg-white">
+          <div class="rounded overflow-hidden shadow-lg bg-white max-w-xl">
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 text-navy">Subscription Service</div>
               <p class="text-navy text-base">
@@ -107,6 +107,10 @@
           class="bg-transparent hover:bg-navy text-white font-semibold hover:text-white py-2 px-4 border border-navy-light rounded"
           @click="prev">Back</button>
       </div>
+
+      <a
+        href="#"
+        class="block text-white no-underline text-center">Would you like to look at our tea dictionary?</a>
 
     </div>
 
