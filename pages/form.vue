@@ -75,12 +75,12 @@
         <div class="px-12">
           <div class="rounded overflow-hidden shadow-lg bg-white">
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-navy">The Coldest Sunset</div>
+              <div class="font-bold text-xl mb-2 text-navy">£1.50 Tea Curation</div>
               <p class="text-navy text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
             </div>
-            <div class="px-6 py-4">
+            <div class="px-6 pb-6">
               <a
                 href="#"
                 class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded">Add to cart</a>
@@ -90,12 +90,12 @@
         <div class="px-12">
           <div class="rounded overflow-hidden shadow-lg bg-white">
             <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2 text-navy">The Coldest Sunset</div>
+              <div class="font-bold text-xl mb-2 text-navy">Subscription Service</div>
               <p class="text-navy text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
             </div>
-            <div class="px-6 py-4">
+            <div class="px-6 pb-6">
               <a
                 href="#"
                 class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded">Add to cart</a>
@@ -108,6 +108,7 @@
           class="bg-transparent hover:bg-navy text-white font-semibold hover:text-white py-2 px-4 border border-navy-light rounded"
           @click="prev">Back</button>
       </div>
+      
     </div>
 
   </section>
