@@ -17,8 +17,7 @@
           https://codepen.io/heatherduvall/pen/ggedwy
   -->
   <section
-    v-cloak
-    class="h-screen bg-navy flex items-center justify-center">
+    class="h-full bg-navy flex items-center justify-center">
     <div
       v-if="!completedQuestionnaire"
       class="max-w-lg mx-auto"
@@ -108,7 +107,7 @@
           class="bg-transparent hover:bg-navy text-white font-semibold hover:text-white py-2 px-4 border border-navy-light rounded"
           @click="prev">Back</button>
       </div>
-      
+
     </div>
 
   </section>
@@ -156,5 +155,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+html,
+body,
+#__nuxt,
+#__layout,
+#site-canvas {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
 </style>

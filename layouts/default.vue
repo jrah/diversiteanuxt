@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="site-canvas">
     <nuxt/>
   </div>
 </template>
