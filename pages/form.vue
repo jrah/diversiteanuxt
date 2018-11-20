@@ -18,57 +18,95 @@
   -->
   <section
     v-cloak
-    class="h-screen bg-navy flex items-center">
+    class="h-screen bg-navy flex items-center justify-center">
     <div
+      v-if="!completedQuestionnaire"
       class="max-w-lg mx-auto"
-      style="max-height: 28rem; height: 95%; width:95%;">
+      style="max-height: 28rem; height: 65%; width:95%;">
+      <h1
+        v-for="(question, index) in questions"
+        v-if="questionIndex === index"
+        :key="index"
+        class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
       <div
-      >
-        <h1
-          v-for="(question, index) in questions"
-          v-if="questionIndex === index"
-          :key="index"
-          class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
+        class="ns:rounded-lg ns:shadow-md flex ns:h-full">
         <div
-          class="ns:rounded-lg ns:shadow-md flex ns:h-full">
-          <div
-            style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
-            class="bg-black bg-cover ns:w-1/4 h-full rounded-l-lg"/>
-          <div
-            class="bg-grey-lightest ns:w-3/4 p-5 rounded-r-lg relative">
-            <div>
-              <div
-                class="text-grey-darkest">
 
-                <div v-if="!completedQuestionnaire">
-                  <Question
-                    v-for="(question, index) in questions"
-                    v-if="questionIndex === index"
-                    :question="question"
-                    :question-index="questionIndex"
-                    :key="index"/>
-                </div>
-                <div v-else>
-                  <h2 class="leading-tight mt-0 mb-3">Thanks for your entries.</h2>
-                  <p class="leading-normal mt-0 mb-3">Do you want to buy a subscription or try a £1 sample?</p>
-                </div>
-                <div class="absolute pin-b pin-r p-3">
-                  <button
-                    v-if="questionIndex > 0"
-                    class="text-navy hover:text-navy-light font-bold py-2 px-4"
-                    @click="prev">Back</button>
-                  <button
-                    :disabled="completedQuestionnaire"
-                    class="bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded"
-                    @click="next">Next</button>
-                </div>
+          style="background-image: url('https://source.unsplash.com/gy_DN08336U')"
+          class="bg-black bg-cover ns:w-1/4 h-full rounded-l-lg"/>
+        <div
+          class="bg-grey-lightest ns:w-3/4 p-5 rounded-r-lg relative">
+          <div>
+            <div
+              class="text-grey-darkest">
+
+              <div>
+                <Question
+                  v-for="(question, index) in questions"
+                  v-if="questionIndex === index"
+                  :question="question"
+                  :question-index="questionIndex"
+                  :key="index"/>
+              </div>
+              <div class="absolute pin-b pin-r p-3">
+                <button
+                  v-if="questionIndex > 0"
+                  class="text-navy hover:text-navy-light font-bold py-2 px-4"
+                  @click="prev">Back</button>
+                <button
+                  :disabled="completedQuestionnaire"
+                  class="bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded"
+                  @click="next">Next</button>
               </div>
             </div>
-
-
           </div>
 
+
         </div>
+
+      </div>
+    </div>
+    <div
+      v-else
+      class="">
+      <h2 class="text-grey-dark font-light leading-tight text-xl5 mb-6 text-center">Please select your choice</h2>
+
+      <div class="flex container">
+        <div class="px-12">
+          <div class="rounded overflow-hidden shadow-lg bg-white">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-navy">The Coldest Sunset</div>
+              <p class="text-navy text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <a
+                href="#"
+                class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="px-12">
+          <div class="rounded overflow-hidden shadow-lg bg-white">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-navy">The Coldest Sunset</div>
+              <p class="text-navy text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <a
+                href="#"
+                class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center py-6">
+        <button
+          class="bg-transparent hover:bg-navy text-white font-semibold hover:text-white py-2 px-4 border border-navy-light rounded"
+          @click="prev">Back</button>
       </div>
     </div>
 
