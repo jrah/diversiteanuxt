@@ -1,14 +1,53 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+// import Vue from 'vue'
+// import Vuex from 'vuex'
+//
+// Vue.use(Vuex)
 
-Vue.use(Vuex)
+export const INIT_FORM = 'INIT_FORM'
+export const UPDATE_QUESTION = 'UPDATE_QUESTION'
+export const INCREMENT_QUESTION_INDEX = 'INCREMENT_QUESTION_INDEX'
+export const DECREMENT_QUESTION_INDEX = 'DECREMENT_QUESTION_INDEX'
+
+export const getters = {
+  isChecked(state) {
+    return index => {
+      if (!state.form[state.questionIndex]) {
+        return false
+      }
+      return state.form[state.questionIndex].selectedInput === index
+    }
+  }
+}
+
+export const mutations = {
+  [UPDATE_QUESTION]: (
+    state,
+    { questionIndex = null, selectedInput = null }
+  ) => {
+    const index = questionIndex ? questionIndex : state.questionIndex
+    state.form = {
+      ...state.form,
+      [index]: {
+        selectedInput
+      }
+    }
+  },
+  [INCREMENT_QUESTION_INDEX]: state => {
+    state.questionIndex += 1
+  },
+  [DECREMENT_QUESTION_INDEX]: state => {
+    state.questionIndex -= 1
+  }
+}
+export const actions = {
+  [INIT_FORM]: ({ commit }, questions) => {
+    questions.forEach((question, index) => {
+      commit(UPDATE_QUESTION, { questionIndex: index })
+    })
+  }
+}
 
 export const state = () => ({
-  // store data share in app
-  state: {},
-  getters: {},
-  // these are functions that perform modifications to the state
-  mutations: {},
-  // These are also functions like mutations only with two differences. First, actions are used for asynchronous operations (So they are great for doing http requests), and second, the actions only should modify the store by calling mutations.
-  actions: {}
+  form: {},
+  questionIndex: 0
 })

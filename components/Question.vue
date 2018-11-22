@@ -9,11 +9,11 @@
       <div class="ns:w-1/3"/>
       <label>
         <input
-          :value="input.value"
-          v-model="inputs[index]"
+          :value="index"
           :name="questionIndex"
-          checked
-          type="radio"> {{ input.text }}
+          :checked="isChecked(index)"
+          type="radio"
+          @change="handleChange(index)"> {{ input.text }}
 
       </label>
       <!-- <radio :value="input.value"/> -->
@@ -39,6 +39,14 @@ export default {
       inputs: {
         value: ''
       }
+    }
+  },
+  methods: {
+    isChecked(index) {
+      return this.$store.getters['quiz/isChecked'](index)
+    },
+    handleChange(inputIndex) {
+      this.$store.commit('quiz/UPDATE_QUESTION', { selectedInput: inputIndedx })
     }
   }
 }

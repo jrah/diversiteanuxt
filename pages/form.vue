@@ -129,17 +129,31 @@ export default {
   props: {},
   data() {
     return {
-      questionIndex: 0,
       questions
     }
   },
   computed: {
+    questionIndex() {
+      console.log(this.$store.state.quiz.questionIndex)
+      return this.$store.state.quiz.questionIndex
+    },
+    form: {
+      get() {
+        return this.$store.state.quiz.form
+      },
+      set(value) {
+        this.$store.dispatch()
+      }
+    },
     completedQuestionnaire() {
       if (!questions) {
         return false
       }
       return this.questionIndex >= questions.length
     }
+  },
+  mounted() {
+    this.$store.dispatch('quiz/INIT_FORM', questions)
   },
   updated() {
     console.log('Form:', this.form)
@@ -148,12 +162,10 @@ export default {
   methods: {
     // go to next question
     next: function() {
-      this.questionIndex += 1
-      // eslint-no-console
-      // console.log(this.userInputs)
+      this.$store.commit('quiz/INCREMENT_QUESTION_INDEX')
     },
     prev: function() {
-      this.questionIndex -= 1
+      this.$store.commit('quiz/DECREMENT_QUESTION_INDEX')
     }
   }
 }
