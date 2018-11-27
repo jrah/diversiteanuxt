@@ -6,7 +6,7 @@
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum debitis dolore maxime voluptate dolorem blanditiis?",
       "inputs": [
         {
-          "type": "radio",
+          "type": "text",
           "text": "Very",
           "value": "Lorem ipsum dolor sit."
         },

@@ -12,7 +12,7 @@
           :value="index"
           :name="questionIndex"
           :checked="isChecked(index)"
-          type="radio"
+          :type="input.type"
           @change="handleChange(index)"> {{ input.text }}
 
       </label>
