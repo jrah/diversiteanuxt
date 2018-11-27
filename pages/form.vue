@@ -38,7 +38,11 @@
           <div>
             <div
               class="text-grey-darkest">
-
+              <p
+                v-for="(question, index) in questions"
+                v-if="questionIndex === index"
+                :key="index"
+                class="font-light leading-tight text-xl mb-3">{{ question.paragraph }}</p>
               <div>
                 <Question
                   v-for="(question, index) in questions"
