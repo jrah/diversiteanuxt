@@ -4,7 +4,7 @@
     <div
       :style="{'background-image' : 'url('+home.image+')'}"
       class="bg-cover bg-center py-6 relative bg-navy">
-      <div class="container ns:py-33 py-24 relative z-10">
+      <div class="container py-32 relative z-10">
         <div class="text-white m:w-3/5 l:w-2/5">
           <h1
             v-if="home.title"
