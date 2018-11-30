@@ -141,27 +141,19 @@ export default {
       console.log(this.$store.state.quiz.questionIndex)
       return this.$store.state.quiz.questionIndex
     },
-    form: {
-      get() {
-        return this.$store.state.quiz.form
-      },
-      set(value) {
-        this.$store.dispatch()
-      }
-    },
     completedQuestionnaire() {
       if (!questions) {
         return false
+        console.log(this.$store.state.quiz.questionIndex)
       }
       return this.questionIndex >= questions.length
     }
   },
+  updated() {
+    console.log(this.$store.state.quiz.form)
+  },
   mounted() {
     this.$store.dispatch('quiz/INIT_FORM', questions)
-  },
-  updated() {
-    console.log('Form:', this.form)
-    console.log('Question index:', this.questionIndex)
   },
   methods: {
     // go to next question

@@ -11,10 +11,11 @@ export const DECREMENT_QUESTION_INDEX = 'DECREMENT_QUESTION_INDEX'
 export const getters = {
   isChecked(state) {
     return index => {
-      if (!state.form[state.questionIndex]) {
+      const question = state.form[state.questionIndex]
+      if (!question || !question.selectedInput) {
         return false
       }
-      return state.form[state.questionIndex].selectedInput === index
+      return question.selectedInput.index === index
     }
   }
 }
@@ -42,6 +43,9 @@ export const mutations = {
 export const actions = {
   [INIT_FORM]: ({ commit }, questions) => {
     questions.forEach((question, index) => {
+      const questionObject = {
+        ...question
+      }
       commit(UPDATE_QUESTION, { questionIndex: index })
     })
   }
