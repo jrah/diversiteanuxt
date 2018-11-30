@@ -144,8 +144,8 @@ export default {
     completedQuestionnaire() {
       if (!questions) {
         return false
-        console.log(this.$store.state.quiz.questionIndex)
       }
+      console.log('end of quiz results: ', this.$store.state.quiz.form)
       return this.questionIndex >= questions.length
     }
   },
