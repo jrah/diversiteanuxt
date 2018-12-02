@@ -22,11 +22,15 @@
       v-if="!completedQuestionnaire"
       class="max-w-lg mx-auto"
       style="max-height: 28rem; height: 65%; width:95%;">
-      <h1
+      <div
         v-for="(question, index) in questions"
         v-if="questionIndex === index"
-        :key="index"
-        class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
+        :key="index">
+        <div class="flex justify-between">
+          <h1 class="text-grey-dark font-light leading-tight text-xl mb-3">{{ question.heading }}</h1>
+          <span class="text-grey-dark font-light leading-tight text-xl mb-3">{{ questionIndex + 1 }}/3</span>
+        </div>
+      </div>
       <div
         class="ns:rounded-lg ns:shadow-md flex ns:h-full">
         <div
@@ -38,11 +42,15 @@
           <div>
             <div
               class="text-grey-darkest">
-              <p
+              <div
                 v-for="(question, index) in questions"
                 v-if="questionIndex === index"
-                :key="index"
-                class="font-light leading-tight text-xl mb-3">{{ question.paragraph }}</p>
+                :key="index">
+                <p
+                  v-if="question.paragraph"
+                  class="font-light leading-tight text-xl mb-3"
+                > {{ question.paragraph }}</p>
+              </div>
               <div>
                 <Question
                   v-for="(question, index) in questions"
