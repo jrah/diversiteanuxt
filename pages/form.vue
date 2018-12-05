@@ -109,7 +109,8 @@
             <div class="px-6 pb-6">
               <a
                 href="#"
-                class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded">Add to cart</a>
+                class="no-underline bg-navy hover:bg-navy-dark text-white font-bold py-2 px-4 rounded"
+              >Add to cart</a>
             </div>
           </div>
         </div>
@@ -122,7 +123,9 @@
 
       <a
         href="#"
-        class="block text-white no-underline text-center">Would you like to look at our tea dictionary?</a>
+        class="block text-white no-underline text-center"
+
+        @click="sendToFirebase">Would you like to look at our tea dictionary?</a>
 
     </div>
 
@@ -134,6 +137,12 @@ import Radio from '~/components/input/Radio.vue'
 import { Question } from '~/components/index'
 import { questions } from '~/content/questions.json'
 export default {
+  firebase: {
+    answers: this.$firebase
+      .database()
+      .ref.ref('/')
+      .set(this.$store.state.quiz.form)
+  },
   components: {
     Radio,
     Question
@@ -162,6 +171,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('quiz/INIT_FORM', questions)
+    console.log('mounted')
   },
   methods: {
     // go to next question
@@ -170,6 +180,12 @@ export default {
     },
     prev: function() {
       this.$store.commit('quiz/DECREMENT_QUESTION_INDEX')
+    },
+    sendToFirebase: function() {
+      this.$firebaseRefs.answers.push({
+        questions: questions
+      })
+      alert('Succeessfully added')
     }
   }
 }
