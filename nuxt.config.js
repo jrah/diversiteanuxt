@@ -36,19 +36,19 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
     // '@nuxtjs/firebird',
-    {
-      src: '@rafamaciel/firebase',
-      options: {
-        apiKey: 'AIzaSyBil-h_Pbmn5KU0u-9-jCZqmSN2VqTHWFM',
-        authDomain: 'diversitea-162723.firebaseapp.com',
-        databaseURL: 'https://diversitea-162723.firebaseio.com',
-        projectId: 'diversitea-162723',
-        storageBucket: 'diversitea-162723.appspot.com',
-        messagingSenderId: '789895598608'
-      }
-    }
+    // {
+    //   src: '@rafamaciel/firebase',
+    //   options: {
+    //     apiKey: 'AIzaSyBil-h_Pbmn5KU0u-9-jCZqmSN2VqTHWFM',
+    //     authDomain: 'diversitea-162723.firebaseapp.com',
+    //     databaseURL: 'https://diversitea-162723.firebaseio.com',
+    //     projectId: 'diversitea-162723',
+    //     storageBucket: 'diversitea-162723.appspot.com',
+    //     messagingSenderId: '789895598608'
+    //   }
+    // }
   ],
   /*
   ** Axios module configuration
