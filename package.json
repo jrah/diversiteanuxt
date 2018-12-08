@@ -15,7 +15,6 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
-    "firebase-tools": "^6.1.1",
     "global": "^4.3.2",
     "node-sass": "^4.9.4",
     "nuxt": "^2.0.0",
