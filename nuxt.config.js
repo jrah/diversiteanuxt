@@ -37,7 +37,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    '@nuxtjs/firebird',
+    // '@nuxtjs/firebird',
     {
       src: '@rafamaciel/firebase',
       options: {
