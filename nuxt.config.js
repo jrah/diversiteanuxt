@@ -33,10 +33,10 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Roboto'
       }
-    ],
-    script: [
-      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ]
+    // script: [
+    //   { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+    // ]
   },
 
   /*
@@ -53,7 +53,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-awesome', ssr: true },
+    { src: '~/plugins/vue-awesome', ssr: false },
     { src: '~plugins/vue-carousel', ssr: false }
   ],
 
@@ -63,7 +63,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    'nuxt-netlify-cms',
+    // 'nuxt-netlify-cms',
     '@nuxtjs/markdownit',
     'nuxt-purgecss',
     'nuxt-validate'
